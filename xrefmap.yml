@@ -1,0 +1,28 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Microsoft.Extensions.Hosting
+  name: Microsoft.Extensions.Hosting
+  href: api/Microsoft.Extensions.Hosting.html
+  commentId: N:Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+- uid: Microsoft.Extensions.Hosting.HostBuilderExtensions
+  name: HostBuilderExtensions
+  href: api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html
+  commentId: T:Microsoft.Extensions.Hosting.HostBuilderExtensions
+  fullName: Microsoft.Extensions.Hosting.HostBuilderExtensions
+  nameWithType: HostBuilderExtensions
+- uid: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddHosting(Microsoft.Extensions.Hosting.IHostBuilder)
+  name: AddHosting(IHostBuilder)
+  href: api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddHosting_Microsoft_Extensions_Hosting_IHostBuilder_
+  commentId: M:Microsoft.Extensions.Hosting.HostBuilderExtensions.AddHosting(Microsoft.Extensions.Hosting.IHostBuilder)
+  fullName: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddHosting(Microsoft.Extensions.Hosting.IHostBuilder)
+  nameWithType: HostBuilderExtensions.AddHosting(IHostBuilder)
+- uid: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddHosting*
+  name: AddHosting
+  href: api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddHosting_
+  commentId: Overload:Microsoft.Extensions.Hosting.HostBuilderExtensions.AddHosting
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddHosting
+  nameWithType: HostBuilderExtensions.AddHosting
