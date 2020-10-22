@@ -1,28 +1,162 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: CG.Hosting
+  name: CG.Hosting
+  href: api/CG.Hosting.html
+  commentId: N:CG.Hosting
+  fullName: CG.Hosting
+  nameWithType: CG.Hosting
+- uid: CG.Hosting.Application
+  name: Application
+  href: api/CG.Hosting.Application.html
+  commentId: T:CG.Hosting.Application
+  fullName: CG.Hosting.Application
+  nameWithType: Application
+- uid: CG.Hosting.ApplicationExtensions
+  name: ApplicationExtensions
+  href: api/CG.Hosting.ApplicationExtensions.html
+  commentId: T:CG.Hosting.ApplicationExtensions
+  fullName: CG.Hosting.ApplicationExtensions
+  nameWithType: ApplicationExtensions
+- uid: CG.Hosting.ApplicationExtensions.RunOnce*
+  name: RunOnce
+  href: api/CG.Hosting.ApplicationExtensions.html#CG_Hosting_ApplicationExtensions_RunOnce_
+  commentId: Overload:CG.Hosting.ApplicationExtensions.RunOnce
+  isSpec: "True"
+  fullName: CG.Hosting.ApplicationExtensions.RunOnce
+  nameWithType: ApplicationExtensions.RunOnce
+- uid: CG.Hosting.ApplicationExtensions.RunOnce``1(CG.Hosting.IApplication,System.Action)
+  name: RunOnce<TProgram>(IApplication, Action)
+  href: api/CG.Hosting.ApplicationExtensions.html#CG_Hosting_ApplicationExtensions_RunOnce__1_CG_Hosting_IApplication_System_Action_
+  commentId: M:CG.Hosting.ApplicationExtensions.RunOnce``1(CG.Hosting.IApplication,System.Action)
+  name.vb: RunOnce(Of TProgram)(IApplication, Action)
+  fullName: CG.Hosting.ApplicationExtensions.RunOnce<TProgram>(CG.Hosting.IApplication, System.Action)
+  fullName.vb: CG.Hosting.ApplicationExtensions.RunOnce(Of TProgram)(CG.Hosting.IApplication, System.Action)
+  nameWithType: ApplicationExtensions.RunOnce<TProgram>(IApplication, Action)
+  nameWithType.vb: ApplicationExtensions.RunOnce(Of TProgram)(IApplication, Action)
+- uid: CG.Hosting.ApplicationExtensions.RunOnceAsync*
+  name: RunOnceAsync
+  href: api/CG.Hosting.ApplicationExtensions.html#CG_Hosting_ApplicationExtensions_RunOnceAsync_
+  commentId: Overload:CG.Hosting.ApplicationExtensions.RunOnceAsync
+  isSpec: "True"
+  fullName: CG.Hosting.ApplicationExtensions.RunOnceAsync
+  nameWithType: ApplicationExtensions.RunOnceAsync
+- uid: CG.Hosting.ApplicationExtensions.RunOnceAsync``1(CG.Hosting.IApplication,System.Action,System.Threading.CancellationToken)
+  name: RunOnceAsync<TProgram>(IApplication, Action, CancellationToken)
+  href: api/CG.Hosting.ApplicationExtensions.html#CG_Hosting_ApplicationExtensions_RunOnceAsync__1_CG_Hosting_IApplication_System_Action_System_Threading_CancellationToken_
+  commentId: M:CG.Hosting.ApplicationExtensions.RunOnceAsync``1(CG.Hosting.IApplication,System.Action,System.Threading.CancellationToken)
+  name.vb: RunOnceAsync(Of TProgram)(IApplication, Action, CancellationToken)
+  fullName: CG.Hosting.ApplicationExtensions.RunOnceAsync<TProgram>(CG.Hosting.IApplication, System.Action, System.Threading.CancellationToken)
+  fullName.vb: CG.Hosting.ApplicationExtensions.RunOnceAsync(Of TProgram)(CG.Hosting.IApplication, System.Action, System.Threading.CancellationToken)
+  nameWithType: ApplicationExtensions.RunOnceAsync<TProgram>(IApplication, Action, CancellationToken)
+  nameWithType.vb: ApplicationExtensions.RunOnceAsync(Of TProgram)(IApplication, Action, CancellationToken)
+- uid: CG.Hosting.IApplication
+  name: IApplication
+  href: api/CG.Hosting.IApplication.html
+  commentId: T:CG.Hosting.IApplication
+  fullName: CG.Hosting.IApplication
+  nameWithType: IApplication
 - uid: Microsoft.Extensions.Hosting
   name: Microsoft.Extensions.Hosting
   href: api/Microsoft.Extensions.Hosting.html
   commentId: N:Microsoft.Extensions.Hosting
   fullName: Microsoft.Extensions.Hosting
   nameWithType: Microsoft.Extensions.Hosting
+- uid: Microsoft.Extensions.Hosting.ApplicationBuilderExtensions
+  name: ApplicationBuilderExtensions
+  href: api/Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.html
+  commentId: T:Microsoft.Extensions.Hosting.ApplicationBuilderExtensions
+  fullName: Microsoft.Extensions.Hosting.ApplicationBuilderExtensions
+  nameWithType: ApplicationBuilderExtensions
+- uid: Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.UseStandardExtensions(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  name: UseStandardExtensions(IApplicationBuilder)
+  href: api/Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.html#Microsoft_Extensions_Hosting_ApplicationBuilderExtensions_UseStandardExtensions_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  commentId: M:Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.UseStandardExtensions(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  fullName: Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.UseStandardExtensions(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  nameWithType: ApplicationBuilderExtensions.UseStandardExtensions(IApplicationBuilder)
+- uid: Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.UseStandardExtensions*
+  name: UseStandardExtensions
+  href: api/Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.html#Microsoft_Extensions_Hosting_ApplicationBuilderExtensions_UseStandardExtensions_
+  commentId: Overload:Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.UseStandardExtensions
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.UseStandardExtensions
+  nameWithType: ApplicationBuilderExtensions.UseStandardExtensions
 - uid: Microsoft.Extensions.Hosting.HostBuilderExtensions
   name: HostBuilderExtensions
   href: api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html
   commentId: T:Microsoft.Extensions.Hosting.HostBuilderExtensions
   fullName: Microsoft.Extensions.Hosting.HostBuilderExtensions
   nameWithType: HostBuilderExtensions
-- uid: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddHosting(Microsoft.Extensions.Hosting.IHostBuilder)
-  name: AddHosting(IHostBuilder)
-  href: api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddHosting_Microsoft_Extensions_Hosting_IHostBuilder_
-  commentId: M:Microsoft.Extensions.Hosting.HostBuilderExtensions.AddHosting(Microsoft.Extensions.Hosting.IHostBuilder)
-  fullName: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddHosting(Microsoft.Extensions.Hosting.IHostBuilder)
-  nameWithType: HostBuilderExtensions.AddHosting(IHostBuilder)
-- uid: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddHosting*
-  name: AddHosting
-  href: api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddHosting_
-  commentId: Overload:Microsoft.Extensions.Hosting.HostBuilderExtensions.AddHosting
+- uid: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions*
+  name: AddStandardExtensions
+  href: api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions_
+  commentId: Overload:Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions
   isSpec: "True"
-  fullName: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddHosting
-  nameWithType: HostBuilderExtensions.AddHosting
+  fullName: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions
+  nameWithType: HostBuilderExtensions.AddStandardExtensions
+- uid: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions``1(Microsoft.Extensions.Hosting.IHostBuilder)
+  name: AddStandardExtensions<TProgram>(IHostBuilder)
+  href: api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__1_Microsoft_Extensions_Hosting_IHostBuilder_
+  commentId: M:Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions``1(Microsoft.Extensions.Hosting.IHostBuilder)
+  name.vb: AddStandardExtensions(Of TProgram)(IHostBuilder)
+  fullName: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions<TProgram>(Microsoft.Extensions.Hosting.IHostBuilder)
+  fullName.vb: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions(Of TProgram)(Microsoft.Extensions.Hosting.IHostBuilder)
+  nameWithType: HostBuilderExtensions.AddStandardExtensions<TProgram>(IHostBuilder)
+  nameWithType.vb: HostBuilderExtensions.AddStandardExtensions(Of TProgram)(IHostBuilder)
+- uid: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions``2(Microsoft.Extensions.Hosting.IHostBuilder)
+  name: AddStandardExtensions<TProgram, TOptions>(IHostBuilder)
+  href: api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__2_Microsoft_Extensions_Hosting_IHostBuilder_
+  commentId: M:Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions``2(Microsoft.Extensions.Hosting.IHostBuilder)
+  name.vb: AddStandardExtensions(Of TProgram, TOptions)(IHostBuilder)
+  fullName: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions<TProgram, TOptions>(Microsoft.Extensions.Hosting.IHostBuilder)
+  fullName.vb: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions(Of TProgram, TOptions)(Microsoft.Extensions.Hosting.IHostBuilder)
+  nameWithType: HostBuilderExtensions.AddStandardExtensions<TProgram, TOptions>(IHostBuilder)
+  nameWithType.vb: HostBuilderExtensions.AddStandardExtensions(Of TProgram, TOptions)(IHostBuilder)
+- uid: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions``2(Microsoft.Extensions.Hosting.IHostBuilder,System.String)
+  name: AddStandardExtensions<TProgram, TOptions>(IHostBuilder, String)
+  href: api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__2_Microsoft_Extensions_Hosting_IHostBuilder_System_String_
+  commentId: M:Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions``2(Microsoft.Extensions.Hosting.IHostBuilder,System.String)
+  name.vb: AddStandardExtensions(Of TProgram, TOptions)(IHostBuilder, String)
+  fullName: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions<TProgram, TOptions>(Microsoft.Extensions.Hosting.IHostBuilder, System.String)
+  fullName.vb: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions(Of TProgram, TOptions)(Microsoft.Extensions.Hosting.IHostBuilder, System.String)
+  nameWithType: HostBuilderExtensions.AddStandardExtensions<TProgram, TOptions>(IHostBuilder, String)
+  nameWithType.vb: HostBuilderExtensions.AddStandardExtensions(Of TProgram, TOptions)(IHostBuilder, String)
+- uid: Microsoft.Extensions.Hosting.HostExtensions
+  name: HostExtensions
+  href: api/Microsoft.Extensions.Hosting.HostExtensions.html
+  commentId: T:Microsoft.Extensions.Hosting.HostExtensions
+  fullName: Microsoft.Extensions.Hosting.HostExtensions
+  nameWithType: HostExtensions
+- uid: Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost})
+  name: RunDelegate(IHost, Action<IHost>)
+  href: api/Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost__
+  commentId: M:Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost})
+  name.vb: RunDelegate(IHost, Action(Of IHost))
+  fullName: Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost, System.Action<Microsoft.Extensions.Hosting.IHost>)
+  fullName.vb: Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost, System.Action(Of Microsoft.Extensions.Hosting.IHost))
+  nameWithType: HostExtensions.RunDelegate(IHost, Action<IHost>)
+  nameWithType.vb: HostExtensions.RunDelegate(IHost, Action(Of IHost))
+- uid: Microsoft.Extensions.Hosting.HostExtensions.RunDelegate*
+  name: RunDelegate
+  href: api/Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_
+  commentId: Overload:Microsoft.Extensions.Hosting.HostExtensions.RunDelegate
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Hosting.HostExtensions.RunDelegate
+  nameWithType: HostExtensions.RunDelegate
+- uid: Microsoft.Extensions.Hosting.HostExtensions.RunDelegateAsync(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  name: RunDelegateAsync(IHost, Action<IHost, CancellationToken>, CancellationToken)
+  href: api/Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunDelegateAsync_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken_
+  commentId: M:Microsoft.Extensions.Hosting.HostExtensions.RunDelegateAsync(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  name.vb: RunDelegateAsync(IHost, Action(Of IHost, CancellationToken), CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.HostExtensions.RunDelegateAsync(Microsoft.Extensions.Hosting.IHost, System.Action<Microsoft.Extensions.Hosting.IHost, System.Threading.CancellationToken>, System.Threading.CancellationToken)
+  fullName.vb: Microsoft.Extensions.Hosting.HostExtensions.RunDelegateAsync(Microsoft.Extensions.Hosting.IHost, System.Action(Of Microsoft.Extensions.Hosting.IHost, System.Threading.CancellationToken), System.Threading.CancellationToken)
+  nameWithType: HostExtensions.RunDelegateAsync(IHost, Action<IHost, CancellationToken>, CancellationToken)
+  nameWithType.vb: HostExtensions.RunDelegateAsync(IHost, Action(Of IHost, CancellationToken), CancellationToken)
+- uid: Microsoft.Extensions.Hosting.HostExtensions.RunDelegateAsync*
+  name: RunDelegateAsync
+  href: api/Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunDelegateAsync_
+  commentId: Overload:Microsoft.Extensions.Hosting.HostExtensions.RunDelegateAsync
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Hosting.HostExtensions.RunDelegateAsync
+  nameWithType: HostExtensions.RunDelegateAsync
