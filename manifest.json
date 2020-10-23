@@ -14,54 +14,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Hosting.Application.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Hosting.Application.html",
-          "hash": "34s3b0aK4P1X5yv9Pf/hQw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Hosting.ApplicationExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Hosting.ApplicationExtensions.html",
-          "hash": "vtN3H0DKPMoUsRRjOOvlIQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Hosting.IApplication.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Hosting.IApplication.html",
-          "hash": "vFbDMubqpO9BQbExIQxfDQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Hosting.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Hosting.html",
-          "hash": "PpWaYYz1q81NOv+waNVTgA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.yml",
       "output": {
         ".html": {
@@ -78,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html",
-          "hash": "z6QePOvDf1BUfWQGG1gyvw=="
+          "hash": "VTagrqMaAJ3EGkxO0XKWuQ=="
         }
       },
       "is_incremental": false,
@@ -114,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "7l0Ck0Bf2ive06zyZtr8tQ=="
+          "hash": "GMkZz+kAbE+L8IW3DUkIKw=="
         }
       },
       "is_incremental": false,
@@ -162,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "ptrkgNBcYDWG5ycEjGI/Pg=="
+          "hash": "1bVz0zIPIOh7DVabY1+QXA=="
         }
       },
       "is_incremental": false,
@@ -189,7 +141,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 8,
+          "total_file_count": 4,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
