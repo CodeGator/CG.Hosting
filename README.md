@@ -1,5 +1,6 @@
 # CG.Hosting: 
 
+
 ---
 [![Build Status](https://dev.azure.com/codegator/CG.Hosting/_apis/build/status/CodeGator.CG.Hosting?branchName=master)](https://dev.azure.com/codegator/CG.Hosting/_build/latest?definitionId=20&branchName=master)
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Hosting/index.html)
