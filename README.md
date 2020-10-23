@@ -6,12 +6,18 @@
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Hosting.svg?style=flat)](https://nuget.org/packages/CG.Hosting)
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Hosting/20)
 
-
 #### What does it do?
-The package contains standard hosting logic used used by other CodeGator packages.
+The package contains standard hosting extensions used by other CodeGator packages.
+
+#### Commonly used types:
+* CG.Hosting.IApplication
+* CG.Hosting.Application
+* CG.Hosting.ApplicationExtensions
+* Microsoft.Extensions.Hosting.ApplicationBuilderExtensions
+* Microsoft.Extensions.Hosting.HostBuilderExtensions
+* Microsoft.Extensions.Hosting.HostExtensions
 
 #### What platform(s) does it support?
-* .NET 4.61x or above
 * .NET Standard 2.x or higher
 
 #### How do I install it?

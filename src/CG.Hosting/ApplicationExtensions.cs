@@ -29,6 +29,8 @@ namespace CG.Hosting
         /// <param name="application">The application to use for the operation.</param>
         /// <param name="action">The delegate to use for the operation.</param>
         /// <returns>True if the delegate was run; false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// any of the arguments are missing, or NULL.</exception>
         [DebuggerStepThrough]
         public static bool RunOnce<TProgram>(
             this IApplication application,
@@ -161,6 +163,8 @@ namespace CG.Hosting
         /// <param name="action">The delegate to use for the operation.</param>
         /// <param name="cancellationToken">A cancellation token.</param>
         /// <returns>True if the delegate was run; false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// any of the arguments are missing, or NULL.</exception>
         [DebuggerStepThrough]
         public static async Task<bool> RunOnceAsync<TProgram>(
             this IApplication application,
@@ -283,7 +287,6 @@ namespace CG.Hosting
 
             // Return the results.
             return false;
-
         }
 
         #endregion

@@ -25,14 +25,15 @@ namespace Microsoft.Extensions.Hosting
         #region Public methods
 
         /// <summary>
-        /// This method adds a standard hosting configuration to the specified
-        /// host builder. A standard hosting configuration is one that includes
-        /// at a minimum, user secrets and serilog logging.
+        /// This method adds standard hosting configuration to the specified
+        /// host builder, including user secrets and serilog logging.
         /// </summary>
         /// <typeparam name="TProgram">The type of associated hosting program.</typeparam>
         /// <param name="hostBuilder">The host builder to use for the operation.</param>
         /// <returns>The value of the <paramref name="hostBuilder"/> parameter, 
         /// for chaining calls together.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// any of the arguments are missing, or NULL.</exception>
         public static IHostBuilder AddStandardExtensions<TProgram>(
             this IHostBuilder hostBuilder
             ) where TProgram : class
@@ -68,15 +69,17 @@ namespace Microsoft.Extensions.Hosting
         // *******************************************************************
 
         /// <summary>
-        /// This method adds a standard hosting configuration to the specified
-        /// host builder. A standard hosting configuration is one that includes
-        /// at a minimum, user secrets, program options, and serilog logging.
+        /// This method adds standard hosting configuration to the specified
+        /// host builder, including user secrets, program options, and serilog 
+        /// logging.
         /// </summary>
         /// <typeparam name="TProgram">The type of associated hosting program.</typeparam>
         /// <typeparam name="TOptions">The type of associated options.</typeparam>
         /// <param name="hostBuilder">The host builder to use for the operation.</param>
         /// <returns>The value of the <paramref name="hostBuilder"/> parameter, 
         /// for chaining calls together.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// any of the arguments are missing, or NULL.</exception>
         public static IHostBuilder AddStandardExtensions<TProgram, TOptions>(
             this IHostBuilder hostBuilder
             ) where TProgram : class
@@ -137,9 +140,9 @@ namespace Microsoft.Extensions.Hosting
         // *******************************************************************
 
         /// <summary>
-        /// This method adds a standard hosting configuration to the specified
-        /// host builder. A standard hosting configuration is one that includes
-        /// at a minimum, user secrets, program options, and serilog logging.
+        /// This method adds standard hosting configuration to the specified
+        /// host builder, including user secrets, program options, and serilog 
+        /// logging.
         /// </summary>
         /// <typeparam name="TProgram">The type of associated hosting program.</typeparam>
         /// <typeparam name="TOptions">The type of associated options.</typeparam>
@@ -147,6 +150,8 @@ namespace Microsoft.Extensions.Hosting
         /// <param name="sectionName">The configuration section to use for the operation.</param>
         /// <returns>The value of the <paramref name="hostBuilder"/> parameter, 
         /// for chaining calls together.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// any of the arguments are missing, or NULL.</exception>
         public static IHostBuilder AddStandardExtensions<TProgram, TOptions>(
             this IHostBuilder hostBuilder,
             string sectionName

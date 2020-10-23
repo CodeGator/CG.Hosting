@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <RootNamespace>CG.Hosting</RootNamespace>
-    <Description>This package contains hosting logic used by other CodeGator packages. 
+    <Description>This package contains hosting extensions used by other CodeGator packages. 
 
 Platforms supported:
       .NET Standard 2.0 or above</Description>

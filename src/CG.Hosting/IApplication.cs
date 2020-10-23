@@ -7,6 +7,6 @@ namespace CG.Hosting
     /// </summary>
     public interface IApplication
     {
-
+        
     }
 }

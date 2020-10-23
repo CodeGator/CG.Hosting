@@ -18,12 +18,15 @@ namespace Microsoft.Extensions.Hosting
         #region Public methods
 
         /// <summary>
-        /// This method runs the specified delegate asynchronously.
+        /// This method runs a delegate within the context of the specified <see cref="IHost"/> 
+        /// object.
         /// </summary>
         /// <param name="host">The host to use for the operation.</param>
         /// <param name="action">The delegate to use for the operation.</param>
         /// <param name="token">A cancellation token.</param>
         /// <returns>A task to perform the operation.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// any of the arguments are missing, or NULL.</exception>
         public static async Task RunDelegateAsync(
             this IHost host,
             Action<IHost, CancellationToken> action,
@@ -44,10 +47,13 @@ namespace Microsoft.Extensions.Hosting
         // *******************************************************************
 
         /// <summary>
-        /// This method runs the specified delegate.
+        /// This method runs a delegate within the context of the specified <see cref="IHost"/> 
+        /// object.
         /// </summary>
         /// <param name="host">The host to use for the operation.</param>
         /// <param name="action">The delegate to use for the operation.</param>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// any of the arguments are missing, or NULL.</exception>
         public static void RunDelegate(
             this IHost host,
             Action<IHost> action

@@ -1,6 +1,7 @@
 ﻿using CG.Validations;
 using Microsoft.AspNetCore.Builder;
 using Serilog;
+using System;
 
 namespace Microsoft.Extensions.Hosting
 {
@@ -17,14 +18,15 @@ namespace Microsoft.Extensions.Hosting
         #region Public methods
 
         /// <summary>
-        /// This method adds middleware for standard hosting configuration. A 
-        /// standard hosting configuration is one that includes at least, user 
-        /// secrets, program options, and serilog logging.
+        /// This method adds middleware to support a standard hosting configuration, 
+        /// including user secrets, program options, and serilog logging.
         /// </summary>
         /// <param name="applicationBuilder">The application builder to use 
         /// for the operation.</param>
         /// <returns>The value of the <paramref name="applicationBuilder"/>
         /// parameter for chaining calls together.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// any of the arguments are missing, or NULL.</exception>
         public static IApplicationBuilder UseStandardExtensions(
             this IApplicationBuilder applicationBuilder
             )
