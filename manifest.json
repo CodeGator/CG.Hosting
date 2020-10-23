@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Hosting.ApplicationExtensions.html",
-          "hash": "llnLiVquB2w0fTI1V8IQjg=="
+          "hash": "vtN3H0DKPMoUsRRjOOvlIQ=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.html",
-          "hash": "1hzBsQqU4qYDhnwNQunjHw=="
+          "hash": "cwqHsA8jJ7aMTm2pre63mw=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html",
-          "hash": "NJjGfPXo4Qnj9MqB4UTiAQ=="
+          "hash": "z6QePOvDf1BUfWQGG1gyvw=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Hosting.HostExtensions.html",
-          "hash": "5z0Leonc/onK8L1ePxKuQA=="
+          "hash": "2FXmcdDmUiORknu6QEoVDQ=="
         }
       },
       "is_incremental": false,

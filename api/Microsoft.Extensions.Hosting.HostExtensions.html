@@ -126,7 +126,8 @@ type.</p>
   </h3>
   <a id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunDelegate*"></a>
   <h4 id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost__" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost})">RunDelegate(IHost, Action&lt;IHost&gt;)</h4>
-  <div class="markdown level1 summary"><p>This method runs the specified delegate.</p>
+  <div class="markdown level1 summary"><p>This method runs a delegate within the context of the specified <span class="xref">Microsoft.Extensions.Hosting.IHost</span>
+object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -157,9 +158,27 @@ type.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown whenever
+any of the arguments are missing, or NULL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegateAsync_" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunDelegateAsync*"></a>
   <h4 id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegateAsync_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken_" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunDelegateAsync(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken},System.Threading.CancellationToken)">RunDelegateAsync(IHost, Action&lt;IHost, CancellationToken&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>This method runs the specified delegate asynchronously.</p>
+  <div class="markdown level1 summary"><p>This method runs a delegate within the context of the specified <span class="xref">Microsoft.Extensions.Hosting.IHost</span>
+object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -208,6 +227,23 @@ type.</p>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown whenever
+any of the arguments are missing, or NULL.</p>
 </td>
       </tr>
     </tbody>
