@@ -1,14 +1,10 @@
-﻿using CG;
-using CG.DataAnnotations;
-using CG.DataAnnotations.Options;
+﻿using CG.DataAnnotations;
+using CG.Options;
 using CG.Validations;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using Serilog;
-using Serilog.Exceptions;
 using System;
-using System.Diagnostics;
 
 namespace Microsoft.Extensions.Hosting
 {
@@ -25,8 +21,8 @@ namespace Microsoft.Extensions.Hosting
         #region Public methods
 
         /// <summary>
-        /// This method adds standard hosting configuration to the specified
-        /// host builder, including user secrets and serilog logging.
+        /// This method adds standard hosting configuration and services to the 
+        /// specified host builder, including user secrets and serilog based logging.
         /// </summary>
         /// <typeparam name="TProgram">The type of associated hosting program.</typeparam>
         /// <param name="hostBuilder">The host builder to use for the operation.</param>
@@ -48,19 +44,7 @@ namespace Microsoft.Extensions.Hosting
             });
 
             // Add Serilog services.
-            hostBuilder.UseSerilog((hostingContext, loggerConfiguration) =>
-            {
-                loggerConfiguration.ReadFrom.Configuration(
-                    hostingContext.Configuration
-                    )
-                    .Enrich.WithExceptionDetails()
-                    .Enrich.FromLogContext()
-                    .Enrich.WithProperty("ApplicationName", AppDomain.CurrentDomain.FriendlyNameEx(true))
-                    .Enrich.WithProperty("Environment", hostingContext.HostingEnvironment);
-#if DEBUG
-                loggerConfiguration.Enrich.WithProperty("DebuggerAttached", Debugger.IsAttached);
-#endif
-            });
+            hostBuilder.AddSerilog();
 
             // Return the builder.
             return hostBuilder;
@@ -69,9 +53,9 @@ namespace Microsoft.Extensions.Hosting
         // *******************************************************************
 
         /// <summary>
-        /// This method adds standard hosting configuration to the specified
-        /// host builder, including user secrets, program options, and serilog 
-        /// logging.
+        /// This method adds standard hosting configuration and services to the 
+        /// specified host builder, including user secrets, program options, and 
+        /// serilog based logging.
         /// </summary>
         /// <typeparam name="TProgram">The type of associated hosting program.</typeparam>
         /// <typeparam name="TOptions">The type of associated options.</typeparam>
@@ -119,19 +103,7 @@ namespace Microsoft.Extensions.Hosting
             });
 
             // Add Serilog services.
-            hostBuilder.UseSerilog((hostingContext, loggerConfiguration) =>
-            {
-                loggerConfiguration.ReadFrom.Configuration(
-                    hostingContext.Configuration
-                    )
-                    .Enrich.WithExceptionDetails()
-                    .Enrich.FromLogContext()
-                    .Enrich.WithProperty("ApplicationName", AppDomain.CurrentDomain.FriendlyNameEx(true))
-                    .Enrich.WithProperty("Environment", hostingContext.HostingEnvironment);
-#if DEBUG
-                loggerConfiguration.Enrich.WithProperty("DebuggerAttached", Debugger.IsAttached);
-#endif
-            });
+            hostBuilder.AddSerilog();
 
             // Return the builder.
             return hostBuilder;
@@ -140,9 +112,9 @@ namespace Microsoft.Extensions.Hosting
         // *******************************************************************
 
         /// <summary>
-        /// This method adds standard hosting configuration to the specified
-        /// host builder, including user secrets, program options, and serilog 
-        /// logging.
+        /// This method adds standard hosting configuration and services to the 
+        /// specified host builder, including user secrets, program options, and 
+        /// serilog based logging.
         /// </summary>
         /// <typeparam name="TProgram">The type of associated hosting program.</typeparam>
         /// <typeparam name="TOptions">The type of associated options.</typeparam>
@@ -196,19 +168,7 @@ namespace Microsoft.Extensions.Hosting
             });
 
             // Add Serilog services.
-            hostBuilder.UseSerilog((hostingContext, loggerConfiguration) =>
-            {
-                loggerConfiguration.ReadFrom.Configuration(
-                    hostingContext.Configuration.GetSection(sectionName)
-                    )
-                    .Enrich.WithExceptionDetails()
-                    .Enrich.FromLogContext()
-                    .Enrich.WithProperty("ApplicationName", AppDomain.CurrentDomain.FriendlyNameEx(true))
-                    .Enrich.WithProperty("Environment", hostingContext.HostingEnvironment);
-#if DEBUG
-                loggerConfiguration.Enrich.WithProperty("DebuggerAttached", Debugger.IsAttached);
-#endif
-            });
+            hostBuilder.AddSerilog(sectionName);
 
             // Return the builder.
             return hostBuilder;
