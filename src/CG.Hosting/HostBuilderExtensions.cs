@@ -87,19 +87,8 @@ namespace Microsoft.Extensions.Hosting
                 // Get the configuration.
                 var configuration = serviceProvider.GetRequiredService<IConfiguration>();
 
-                // Create default options.
-                var options = new TOptions();
-
-                // Bind the options to the configuration.
-                configuration.Bind(options);
-
-                // Validate the options, if possible.
-                (options as OptionsBase)?.ThrowIfInvalid();
-
-                // Add the populated options as a service.
-                services.AddSingleton<IOptions<TOptions>>(
-                    new OptionsWrapper<TOptions>(options)
-                    );
+                // Configure the options.
+                services.TryConfigure<TOptions>(configuration);
             });
 
             // Add Serilog services.
@@ -152,19 +141,8 @@ namespace Microsoft.Extensions.Hosting
                 // Get the section.
                 var section = configuration.GetSection(sectionName);
 
-                // Create default options.
-                var options = new TOptions();
-
-                // Bind the options to the section.
-                section.Bind(options);
-
-                // Validate the options, if possible.
-                (options as OptionsBase)?.ThrowIfInvalid();
-
-                // Add the populated options as a service.
-                services.AddSingleton<IOptions<TOptions>>(
-                    new OptionsWrapper<TOptions>(options)
-                    );
+                // Configure the options.
+                services.TryConfigure<TOptions>(section);
             });
 
             // Add Serilog services.
