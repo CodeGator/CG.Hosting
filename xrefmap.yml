@@ -1,6 +1,31 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: Microsoft.AspNetCore.Hosting
+  name: Microsoft.AspNetCore.Hosting
+  href: api/Microsoft.AspNetCore.Hosting.html
+  commentId: N:Microsoft.AspNetCore.Hosting
+  fullName: Microsoft.AspNetCore.Hosting
+  nameWithType: Microsoft.AspNetCore.Hosting
+- uid: Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions
+  name: WebHostBuilderExtensions
+  href: api/Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.html
+  commentId: T:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions
+  fullName: Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions
+  nameWithType: WebHostBuilderExtensions
+- uid: Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStandardExtensions(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+  name: UseStandardExtensions(IWebHostBuilder)
+  href: api/Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.html#Microsoft_AspNetCore_Hosting_WebHostBuilderExtensions_UseStandardExtensions_Microsoft_AspNetCore_Hosting_IWebHostBuilder_
+  commentId: M:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStandardExtensions(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+  fullName: Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStandardExtensions(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+  nameWithType: WebHostBuilderExtensions.UseStandardExtensions(IWebHostBuilder)
+- uid: Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStandardExtensions*
+  name: UseStandardExtensions
+  href: api/Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.html#Microsoft_AspNetCore_Hosting_WebHostBuilderExtensions_UseStandardExtensions_
+  commentId: Overload:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStandardExtensions
+  isSpec: "True"
+  fullName: Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStandardExtensions
+  nameWithType: WebHostBuilderExtensions.UseStandardExtensions
 - uid: Microsoft.Extensions.Hosting
   name: Microsoft.Extensions.Hosting
   href: api/Microsoft.Extensions.Hosting.html

@@ -14,6 +14,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.html",
+          "hash": "DLUeJEdnobGqnOHNwZOUqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Hosting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Hosting.html",
+          "hash": "t0HJ9G/kGLqfVt2JninAQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.yml",
       "output": {
         ".html": {
@@ -66,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "GMkZz+kAbE+L8IW3DUkIKw=="
+          "hash": "HcGsRaCDLKOLW1g7Jset6Q=="
         }
       },
       "is_incremental": false,
@@ -114,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "1bVz0zIPIOh7DVabY1+QXA=="
+          "hash": "w63/P+OTk4fJtD+OFcEDgg=="
         }
       },
       "is_incremental": false,
@@ -141,7 +165,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 4,
+          "total_file_count": 6,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
