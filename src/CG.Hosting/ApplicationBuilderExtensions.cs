@@ -35,7 +35,7 @@ namespace Microsoft.Extensions.Hosting
             Guard.Instance().ThrowIfNull(applicationBuilder, nameof(applicationBuilder));
 
             // Use serilog.
-            applicationBuilder.UseSerilog();
+            applicationBuilder.UseSerilogRequestLogging();
 
             // Return the builder.
             return applicationBuilder;
