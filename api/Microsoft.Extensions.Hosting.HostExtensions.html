@@ -158,6 +158,19 @@ object.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost___examples">Examples</h5>
+  <p>This example demostrates a typical use of the <a class="xref" href="Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost__">RunDelegate(IHost, Action&lt;IHost&gt;)</a>
+method:</p>
+<pre><code>public void ConfigureServices(IServiceCollection services)
+{
+    Host.CreateDefaultBuilder()
+        .Build()
+        .RunDelegate((host) => 
+        {
+            Console.WriteLine(&quot;Hello World&quot;);
+        });
+}</code></pre>
+
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -231,6 +244,19 @@ object.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegateAsync_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken__examples">Examples</h5>
+  <p>This example demostrates a typical use of the <a class="xref" href="Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunDelegateAsync_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken_">RunDelegateAsync(IHost, Action&lt;IHost, CancellationToken&gt;, CancellationToken)</a>
+method:</p>
+<pre><code>public void ConfigureServices(IServiceCollection services)
+{
+    Host.CreateDefaultBuilder()
+        .Build()
+        .RunDelegateAsync((host, token) => 
+        {
+            Console.WriteLine(&quot;Hello World&quot;);
+        });
+}</code></pre>
+
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>

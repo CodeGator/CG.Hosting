@@ -170,6 +170,21 @@ parameter for chaining calls together.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_AspNetCore_Hosting_WebHostBuilderExtensions_UseStandardExtensions_Microsoft_AspNetCore_Hosting_IWebHostBuilder__examples">Examples</h5>
+  <p>This example demostrates a typical use of the <a class="xref" href="Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.html#Microsoft_AspNetCore_Hosting_WebHostBuilderExtensions_UseStandardExtensions_Microsoft_AspNetCore_Hosting_IWebHostBuilder_">UseStandardExtensions(IWebHostBuilder)</a>
+method:</p>
+<pre><code>public void ConfigureServices(IServiceCollection services)
+{
+    Host.CreateDefaultBuilder()
+        .AddStandardExtensions{Program}() // This call also required.
+        .ConfigureWebHost(hostBuilder =>
+        {
+            hostBuilder.UseStandardExtensions();
+        })
+        .Build()
+        .Run();
+}</code></pre>
+
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>

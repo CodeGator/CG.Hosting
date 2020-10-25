@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.html",
-          "hash": "DLUeJEdnobGqnOHNwZOUqQ=="
+          "hash": "9sSrFiH1IZZ8K9Ci0QSi/g=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.html",
-          "hash": "cwqHsA8jJ7aMTm2pre63mw=="
+          "hash": "ggOdtkh3xxri54I/G8RolQ=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html",
-          "hash": "VTagrqMaAJ3EGkxO0XKWuQ=="
+          "hash": "CkQffVI3n85Upkg4aDs0Wg=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Hosting.HostExtensions.html",
-          "hash": "2FXmcdDmUiORknu6QEoVDQ=="
+          "hash": "leTUhMADXF6FAgTwiRS/gA=="
         }
       },
       "is_incremental": false,

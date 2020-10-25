@@ -186,6 +186,21 @@ for chaining calls together.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__1_Microsoft_Extensions_Hosting_IHostBuilder__examples">Examples</h5>
+  <p>This example demostrates a typical use of the <a class="xref" href="Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__1_Microsoft_Extensions_Hosting_IHostBuilder_">AddStandardExtensions&lt;TProgram&gt;(IHostBuilder)</a>
+method:</p>
+<pre><code>public void ConfigureServices(IServiceCollection services)
+{
+    Host.CreateDefaultBuilder()
+        .AddStandardExtensions{Program}() 
+        .ConfigureWebHost(hostBuilder =>
+        {
+            hostBuilder.UseStandardExtensions(); // This call also required.
+        })
+        .Build()
+        .Run();
+}</code></pre>
+
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -271,6 +286,21 @@ for chaining calls together.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__2_Microsoft_Extensions_Hosting_IHostBuilder__examples">Examples</h5>
+  <p>This example demostrates a typical use of the <a class="xref" href="Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__2_Microsoft_Extensions_Hosting_IHostBuilder_">AddStandardExtensions&lt;TProgram, TOptions&gt;(IHostBuilder)</a>
+method:</p>
+<pre><code>public void ConfigureServices(IServiceCollection services)
+{
+    Host.CreateDefaultBuilder()
+        .AddStandardExtensions{Program, MyOptions}() 
+        .ConfigureWebHost(hostBuilder =>
+        {
+            hostBuilder.UseStandardExtensions(); // This call also required.
+        })
+        .Build()
+        .Run();
+}</code></pre>
+
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -362,6 +392,21 @@ for chaining calls together.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__2_Microsoft_Extensions_Hosting_IHostBuilder_System_String__examples">Examples</h5>
+  <p>This example demostrates a typical use of the <a class="xref" href="Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__2_Microsoft_Extensions_Hosting_IHostBuilder_System_String_">AddStandardExtensions&lt;TProgram, TOptions&gt;(IHostBuilder, String)</a>
+method:</p>
+<pre><code>public void ConfigureServices(IServiceCollection services)
+{
+    Host.CreateDefaultBuilder()
+        .AddStandardExtensions{Program, MyOptions}(&quot;MySection&quot;) 
+        .ConfigureWebHost(hostBuilder =>
+        {
+            hostBuilder.UseStandardExtensions(); // This call also required.
+        })
+        .Build()
+        .Run();
+}</code></pre>
+
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
