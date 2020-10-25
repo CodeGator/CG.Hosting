@@ -25,6 +25,23 @@ namespace Microsoft.AspNetCore.Hosting
         /// parameter for chaining calls together.</returns>
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// any of the arguments are missing, or NULL.</exception>
+        /// <example>
+        /// This example demostrates a typical use of the <see cref="UseStandardExtensions(IWebHostBuilder)"/>
+        /// method:
+        /// <code>
+        /// public void ConfigureServices(IServiceCollection services)
+        /// {
+        ///     Host.CreateDefaultBuilder()
+        ///         .AddStandardExtensions{Program}() // This call also required.
+        ///         .ConfigureWebHost(hostBuilder =>
+        ///         {
+        ///             hostBuilder.UseStandardExtensions();
+        ///         })
+        ///         .Build()
+        ///         .Run();
+        /// }
+        /// </code>
+        /// </example>
         public static IWebHostBuilder UseStandardExtensions(
             this IWebHostBuilder webHostBuilder
             )

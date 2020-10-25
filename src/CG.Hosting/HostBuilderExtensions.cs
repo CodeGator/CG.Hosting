@@ -30,6 +30,23 @@ namespace Microsoft.Extensions.Hosting
         /// for chaining calls together.</returns>
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// any of the arguments are missing, or NULL.</exception>
+        /// <example>
+        /// This example demostrates a typical use of the <see cref="AddStandardExtensions{TProgram}(IHostBuilder)"/>
+        /// method:
+        /// <code>
+        /// public void ConfigureServices(IServiceCollection services)
+        /// {
+        ///     Host.CreateDefaultBuilder()
+        ///         .AddStandardExtensions{Program}() 
+        ///         .ConfigureWebHost(hostBuilder =>
+        ///         {
+        ///             hostBuilder.UseStandardExtensions(); // This call also required.
+        ///         })
+        ///         .Build()
+        ///         .Run();
+        /// }
+        /// </code>
+        /// </example>
         public static IHostBuilder AddStandardExtensions<TProgram>(
             this IHostBuilder hostBuilder
             ) where TProgram : class
@@ -64,6 +81,23 @@ namespace Microsoft.Extensions.Hosting
         /// for chaining calls together.</returns>
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// any of the arguments are missing, or NULL.</exception>
+        /// <example>
+        /// This example demostrates a typical use of the <see cref="AddStandardExtensions{TProgram, TOptions}(IHostBuilder)"/>
+        /// method:
+        /// <code>
+        /// public void ConfigureServices(IServiceCollection services)
+        /// {
+        ///     Host.CreateDefaultBuilder()
+        ///         .AddStandardExtensions{Program, MyOptions}() 
+        ///         .ConfigureWebHost(hostBuilder =>
+        ///         {
+        ///             hostBuilder.UseStandardExtensions(); // This call also required.
+        ///         })
+        ///         .Build()
+        ///         .Run();
+        /// }
+        /// </code>
+        /// </example>
         public static IHostBuilder AddStandardExtensions<TProgram, TOptions>(
             this IHostBuilder hostBuilder
             ) where TProgram : class
@@ -113,6 +147,23 @@ namespace Microsoft.Extensions.Hosting
         /// for chaining calls together.</returns>
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// any of the arguments are missing, or NULL.</exception>
+        /// <example>
+        /// This example demostrates a typical use of the <see cref="AddStandardExtensions{TProgram, TOptions}(IHostBuilder, string)"/>
+        /// method:
+        /// <code>
+        /// public void ConfigureServices(IServiceCollection services)
+        /// {
+        ///     Host.CreateDefaultBuilder()
+        ///         .AddStandardExtensions{Program, MyOptions}("MySection") 
+        ///         .ConfigureWebHost(hostBuilder =>
+        ///         {
+        ///             hostBuilder.UseStandardExtensions(); // This call also required.
+        ///         })
+        ///         .Build()
+        ///         .Run();
+        /// }
+        /// </code>
+        /// </example>
         public static IHostBuilder AddStandardExtensions<TProgram, TOptions>(
             this IHostBuilder hostBuilder,
             string sectionName

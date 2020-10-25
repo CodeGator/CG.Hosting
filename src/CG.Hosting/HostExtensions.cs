@@ -27,6 +27,21 @@ namespace Microsoft.Extensions.Hosting
         /// <returns>A task to perform the operation.</returns>
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// any of the arguments are missing, or NULL.</exception>
+        /// <example>
+        /// This example demostrates a typical use of the <see cref="RunDelegateAsync(IHost, Action{IHost, CancellationToken}, CancellationToken)"/>
+        /// method:
+        /// <code>
+        /// public void ConfigureServices(IServiceCollection services)
+        /// {
+        ///     Host.CreateDefaultBuilder()
+        ///         .Build()
+        ///         .RunDelegateAsync((host, token) => 
+        ///         {
+        ///             Console.WriteLine("Hello World");
+        ///         });
+        /// }
+        /// </code>
+        /// </example>
         public static async Task RunDelegateAsync(
             this IHost host,
             Action<IHost, CancellationToken> action,
@@ -54,6 +69,21 @@ namespace Microsoft.Extensions.Hosting
         /// <param name="action">The delegate to use for the operation.</param>
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// any of the arguments are missing, or NULL.</exception>
+        /// <example>
+        /// This example demostrates a typical use of the <see cref="RunDelegate(IHost, Action{IHost})"/>
+        /// method:
+        /// <code>
+        /// public void ConfigureServices(IServiceCollection services)
+        /// {
+        ///     Host.CreateDefaultBuilder()
+        ///         .Build()
+        ///         .RunDelegate((host) => 
+        ///         {
+        ///             Console.WriteLine("Hello World");
+        ///         });
+        /// }
+        /// </code>
+        /// </example>
         public static void RunDelegate(
             this IHost host,
             Action<IHost> action

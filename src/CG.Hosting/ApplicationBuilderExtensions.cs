@@ -27,6 +27,23 @@ namespace Microsoft.Extensions.Hosting
         /// parameter for chaining calls together.</returns>
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// any of the arguments are missing, or NULL.</exception>
+        /// <example>
+        /// This example demostrates a typical use of the <see cref="UseStandardExtensions(IApplicationBuilder)"/>
+        /// method:
+        /// <code>
+        /// public void ConfigureServices(IServiceCollection services)
+        /// {
+        ///     Host.CreateDefaultBuilder()
+        ///         .AddStandardExtensions{Program, MyOptions}() // This call also required.
+        ///         .ConfigureWebHost(hostBuilder =>
+        ///         {
+        ///             hostBuilder.UseStandardExtensions();
+        ///         })
+        ///         .Build()
+        ///         .Run();
+        /// }
+        /// </code>
+        /// </example>
         public static IApplicationBuilder UseStandardExtensions(
             this IApplicationBuilder applicationBuilder
             )
