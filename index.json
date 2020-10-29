@@ -1,4 +1,14 @@
 {
+  "api/CG.Hosting.Options.HostOptions.html": {
+    "href": "api/CG.Hosting.Options.HostOptions.html",
+    "title": "Class HostOptions",
+    "keywords": "Class HostOptions This class represents configuration settings for hosting. Inheritance System.Object CG.DataAnnotations.ValidatableObject CG.Options.OptionsBase HostOptions Implements System.ComponentModel.DataAnnotations.IValidatableObject Inherited Members CG.DataAnnotations.ValidatableObject.Validate(System.ComponentModel.DataAnnotations.ValidationContext) System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Hosting.Options Assembly : CG.Hosting.dll Syntax public class HostOptions : OptionsBase, IValidatableObject Properties Logging This property contains logging options. Declaration public SerilogOptions Logging { get; set; } Property Value Type Description CG.Serilog.Options.SerilogOptions Implements System.ComponentModel.DataAnnotations.IValidatableObject"
+  },
+  "api/CG.Hosting.Options.html": {
+    "href": "api/CG.Hosting.Options.html",
+    "title": "Namespace CG.Hosting.Options",
+    "keywords": "Namespace CG.Hosting.Options Classes HostOptions This class represents configuration settings for hosting."
+  },
   "api/Microsoft.AspNetCore.Hosting.html": {
     "href": "api/Microsoft.AspNetCore.Hosting.html",
     "title": "Namespace Microsoft.AspNetCore.Hosting",

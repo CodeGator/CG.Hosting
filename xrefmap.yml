@@ -1,6 +1,31 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: CG.Hosting.Options
+  name: CG.Hosting.Options
+  href: api/CG.Hosting.Options.html
+  commentId: N:CG.Hosting.Options
+  fullName: CG.Hosting.Options
+  nameWithType: CG.Hosting.Options
+- uid: CG.Hosting.Options.HostOptions
+  name: HostOptions
+  href: api/CG.Hosting.Options.HostOptions.html
+  commentId: T:CG.Hosting.Options.HostOptions
+  fullName: CG.Hosting.Options.HostOptions
+  nameWithType: HostOptions
+- uid: CG.Hosting.Options.HostOptions.Logging
+  name: Logging
+  href: api/CG.Hosting.Options.HostOptions.html#CG_Hosting_Options_HostOptions_Logging
+  commentId: P:CG.Hosting.Options.HostOptions.Logging
+  fullName: CG.Hosting.Options.HostOptions.Logging
+  nameWithType: HostOptions.Logging
+- uid: CG.Hosting.Options.HostOptions.Logging*
+  name: Logging
+  href: api/CG.Hosting.Options.HostOptions.html#CG_Hosting_Options_HostOptions_Logging_
+  commentId: Overload:CG.Hosting.Options.HostOptions.Logging
+  isSpec: "True"
+  fullName: CG.Hosting.Options.HostOptions.Logging
+  nameWithType: HostOptions.Logging
 - uid: Microsoft.AspNetCore.Hosting
   name: Microsoft.AspNetCore.Hosting
   href: api/Microsoft.AspNetCore.Hosting.html

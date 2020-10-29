@@ -14,6 +14,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Options.HostOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Options.HostOptions.html",
+          "hash": "OXkNVPJWxNU5dOcRCwtx4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Options.html",
+          "hash": "byXuqARypGyTMBvou9J8jQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.yml",
       "output": {
         ".html": {
@@ -90,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "HcGsRaCDLKOLW1g7Jset6Q=="
+          "hash": "vftzoLpmqavbnlU2//92JA=="
         }
       },
       "is_incremental": false,
@@ -138,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "w63/P+OTk4fJtD+OFcEDgg=="
+          "hash": "0CfhRQv8w8bhDvQljTAfeg=="
         }
       },
       "is_incremental": false,
@@ -165,7 +189,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 6,
+          "total_file_count": 8,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
