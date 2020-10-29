@@ -1,9 +1,6 @@
-﻿using CG.DataAnnotations;
-using CG.Options;
-using CG.Validations;
+﻿using CG.Validations;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using System;
 
 namespace Microsoft.Extensions.Hosting
@@ -31,7 +28,7 @@ namespace Microsoft.Extensions.Hosting
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// any of the arguments are missing, or NULL.</exception>
         /// <example>
-        /// This example demostrates a typical use of the <see cref="AddStandardExtensions{TProgram}(IHostBuilder)"/>
+        /// This example demonstrates a typical use of the <see cref="AddStandardExtensions{TProgram}(IHostBuilder)"/>
         /// method:
         /// <code>
         /// public void ConfigureServices(IServiceCollection services)
@@ -82,7 +79,7 @@ namespace Microsoft.Extensions.Hosting
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// any of the arguments are missing, or NULL.</exception>
         /// <example>
-        /// This example demostrates a typical use of the <see cref="AddStandardExtensions{TProgram, TOptions}(IHostBuilder)"/>
+        /// This example demonstrates a typical use of the <see cref="AddStandardExtensions{TProgram, TOptions}(IHostBuilder)"/>
         /// method:
         /// <code>
         /// public void ConfigureServices(IServiceCollection services)
@@ -112,17 +109,17 @@ namespace Microsoft.Extensions.Hosting
                 builder.AddUserSecrets<TProgram>(true, true);
             });
 
-            // Add standard options.
+            // Add hosting options.
             hostBuilder.ConfigureServices((context, services) =>
             {
-                // Create the service provider.
+                // Create a service provider.
                 var serviceProvider = services.BuildServiceProvider();
 
                 // Get the configuration.
                 var configuration = serviceProvider.GetRequiredService<IConfiguration>();
 
-                // Configure the options.
-                services.TryConfigure<TOptions>(configuration);
+                // Configure the host options.
+                services.ConfigureOptions<TOptions>(configuration);
             });
 
             // Add Serilog services.
@@ -148,7 +145,7 @@ namespace Microsoft.Extensions.Hosting
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// any of the arguments are missing, or NULL.</exception>
         /// <example>
-        /// This example demostrates a typical use of the <see cref="AddStandardExtensions{TProgram, TOptions}(IHostBuilder, string)"/>
+        /// This example demonstrates a typical use of the <see cref="AddStandardExtensions{TProgram, TOptions}(IHostBuilder, string)"/>
         /// method:
         /// <code>
         /// public void ConfigureServices(IServiceCollection services)
@@ -193,7 +190,7 @@ namespace Microsoft.Extensions.Hosting
                 var section = configuration.GetSection(sectionName);
 
                 // Configure the options.
-                services.TryConfigure<TOptions>(section);
+                services.ConfigureOptions<TOptions>(section);
             });
 
             // Add Serilog services.
