@@ -1,8 +1,6 @@
 ﻿using CG.Options;
 using CG.Serilog.Options;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CG.Hosting.Options
 {
