@@ -8,7 +8,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
-using System.Net;
 using System.Runtime.CompilerServices;
 
 namespace CG.Hosting.Alerts
@@ -34,27 +33,27 @@ namespace CG.Hosting.Alerts
     /// </item>
     /// <item>
     /// <term>Information</term>
-    /// <description>Logs, writes to the console window.</description>
+    /// <description>Logs.</description>
     /// </item>
     /// <item>
     /// <term>Warning</term>
-    /// <description>Logs and writes to the console window.</description>
+    /// <description>Logs.</description>
     /// </item>
     /// <item>
     /// <term>Error</term>
-    /// <description>Logs, sends email, writes to the console window.</description>
+    /// <description>Logs and sends email.</description>
     /// </item>
     /// <item>
     /// <term>Critical</term>
-    /// <description>Logs, sends email, sends a text, writes to the console window.</description>
+    /// <description>Logs and sends email.</description>
     /// </item>
     /// <item>
     /// <term>Debug</term>
-    /// <description>Writes to the debug console.</description>
+    /// <description>Logs.</description>
     /// </item>
     /// <item>
     /// <term>Trace</term>
-    /// <description>Logs, writes to the console window.</description>
+    /// <description>Logs.</description>
     /// </item>
     /// </list>
     /// </para>
