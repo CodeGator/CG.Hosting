@@ -14,11 +14,179 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Hosting.Options.HostOptions.yml",
+      "source_relative_path": "api/CG.Hosting.Alerts.HostedAlertHandler-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Hosting.Options.HostOptions.html",
-          "hash": "OXkNVPJWxNU5dOcRCwtx4A=="
+          "relative_path": "api/CG.Hosting.Alerts.HostedAlertHandler-1.html",
+          "hash": "9G4A7r03NyOUo+Q+IqxFdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Alerts.Template.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Alerts.Template.html",
+          "hash": "sbZDVk0960aSq1SaHe9t1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Alerts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Alerts.html",
+          "hash": "hB4L4XcoB1Vzak37eLtJsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.HostExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.HostExtensions.html",
+          "hash": "YBxi160rBWUtvSji7EczbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Options.AlertHandlerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Options.AlertHandlerOptions.html",
+          "hash": "d7oiX4S7eHbFQ1zi9bjFvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Options.AuditAlertOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Options.AuditAlertOptions.html",
+          "hash": "u17QAX7By7c0ohOYccMG1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Options.CriticalAlertOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Options.CriticalAlertOptions.html",
+          "hash": "Cv5QW5yVNmaIC0mz1KgeYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Options.DebugAlertOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Options.DebugAlertOptions.html",
+          "hash": "/i2ujmbMisxPxAqV2a/Y8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Options.EmailOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Options.EmailOptions.html",
+          "hash": "PblDtjWrxhjpdnFUImaQww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Options.ErrorAlertOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Options.ErrorAlertOptions.html",
+          "hash": "mb7uIQIQxQM46KOVg3NH5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Options.InformationAlertOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Options.InformationAlertOptions.html",
+          "hash": "7zCwTG9DKmlMZv91e04tfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Options.ServiceOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Options.ServiceOptions.html",
+          "hash": "osZzKz1fVAE3VNoVrucukg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Options.StandardOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Options.StandardOptions.html",
+          "hash": "zwpyNy/BYzaV60rmrI3CFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Options.TraceAlertOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Options.TraceAlertOptions.html",
+          "hash": "gJAX6/54Q2/5wlbYDqnskA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Options.WarningAlertOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Options.WarningAlertOptions.html",
+          "hash": "Re8+GynGCFfUv/1fzZ60zQ=="
         }
       },
       "is_incremental": false,
@@ -30,7 +198,31 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Hosting.Options.html",
-          "hash": "byXuqARypGyTMBvou9J8jQ=="
+          "hash": "2TmY/AHfv04vFipMJJX3yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.StandardHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.StandardHost.html",
+          "hash": "POD1YTjbBL1pQmh12y/5dQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.html",
+          "hash": "EsvuOOUSYilNH4m4EH/b5w=="
         }
       },
       "is_incremental": false,
@@ -42,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.html",
-          "hash": "9sSrFiH1IZZ8K9Ci0QSi/g=="
+          "hash": "Jqnci2lSm7FfwjPkGwh0hg=="
         }
       },
       "is_incremental": false,
@@ -54,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Hosting.html",
-          "hash": "t0HJ9G/kGLqfVt2JninAQw=="
+          "hash": "2XwEIQwH5XRb7aTkU5dPrw=="
         }
       },
       "is_incremental": false,
@@ -66,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.html",
-          "hash": "ggOdtkh3xxri54I/G8RolQ=="
+          "hash": "5uV35POC/sUdxMTwSJmbFQ=="
         }
       },
       "is_incremental": false,
@@ -78,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html",
-          "hash": "FAT+qhlj/kaolmG9pAPcsQ=="
+          "hash": "seQ9ivm4Z4+X5Q+/W/+uwA=="
         }
       },
       "is_incremental": false,
@@ -90,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Hosting.HostExtensions.html",
-          "hash": "leTUhMADXF6FAgTwiRS/gA=="
+          "hash": "bfttBhNl0x/XRP8SH05FPg=="
         }
       },
       "is_incremental": false,
@@ -102,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Hosting.html",
-          "hash": "eF9ElpGokRAtWj5J3XVpmA=="
+          "hash": "Gd11Jn5+DpdyF5UqhOhtkQ=="
         }
       },
       "is_incremental": false,
@@ -114,7 +306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "vftzoLpmqavbnlU2//92JA=="
+          "hash": "kdL55yzKSaoUkuN47VR7SQ=="
         }
       },
       "is_incremental": false,
@@ -126,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "ag1CG3zxwwdUWGM6R7o5zw=="
+          "hash": "nopI9drAQU6EKL0WJa5HiQ=="
         }
       },
       "is_incremental": false,
@@ -150,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "oqVEbYfS08BHnICNOdacpQ=="
+          "hash": "8pvNjXlCO0pU94+iYJb2IA=="
         }
       },
       "is_incremental": false,
@@ -162,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "0CfhRQv8w8bhDvQljTAfeg=="
+          "hash": "ptrkgNBcYDWG5ycEjGI/Pg=="
         }
       },
       "is_incremental": false,
@@ -189,7 +381,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 8,
+          "total_file_count": 24,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

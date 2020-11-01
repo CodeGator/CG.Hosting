@@ -78,10 +78,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Microsoft.Extensions.Hosting.HostExtensions">
+            <article class="content wrap" id="_content" data-uid="CG.Hosting.HostExtensions">
   
   
-  <h1 id="Microsoft_Extensions_Hosting_HostExtensions" data-uid="Microsoft.Extensions.Hosting.HostExtensions" class="text-break">Class HostExtensions
+  <h1 id="CG_Hosting_HostExtensions" data-uid="CG.Hosting.HostExtensions" class="text-break">Class HostExtensions
   </h1>
   <div class="markdown level0 summary"><p>This class contains extension methods related to the <span class="xref">Microsoft.Extensions.Hosting.IHost</span>
 type.</p>
@@ -116,23 +116,23 @@ type.</p>
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Extensions.Hosting.html">Microsoft.Extensions.Hosting</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Hosting.html">CG.Hosting</a></h6>
   <h6><strong>Assembly</strong>: CG.Hosting.dll</h6>
-  <h5 id="Microsoft_Extensions_Hosting_HostExtensions_syntax">Syntax</h5>
+  <h5 id="CG_Hosting_HostExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class HostExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  <a id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunDelegate*"></a>
-  <h4 id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost__" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost})">RunDelegate(IHost, Action&lt;IHost&gt;)</h4>
-  <div class="markdown level1 summary"><p>This method runs a delegate within the context of the specified <span class="xref">Microsoft.Extensions.Hosting.IHost</span>
-object.</p>
+  <a id="CG_Hosting_HostExtensions_SetHostedAlertHandler_" data-uid="CG.Hosting.HostExtensions.SetHostedAlertHandler*"></a>
+  <h4 id="CG_Hosting_HostExtensions_SetHostedAlertHandler__1_Microsoft_Extensions_Hosting_IHost_" data-uid="CG.Hosting.HostExtensions.SetHostedAlertHandler``1(Microsoft.Extensions.Hosting.IHost)">SetHostedAlertHandler&lt;TOptions&gt;(IHost)</h4>
+  <div class="markdown level1 summary"><p>This method sets a hosted handler for alerts processing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RunDelegate(this IHost host, Action&lt;IHost&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IHost SetHostedAlertHandler&lt;TOptions&gt;(this IHost host)
+    where TOptions : StandardOptions, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -148,82 +148,6 @@ object.</p>
         <td><span class="xref">Microsoft.Extensions.Hosting.IHost</span></td>
         <td><span class="parametername">host</span></td>
         <td><p>The host to use for the operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">Microsoft.Extensions.Hosting.IHost</span>&gt;</td>
-        <td><span class="parametername">action</span></td>
-        <td><p>The delegate to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost___examples">Examples</h5>
-  <p>This example demostrates a typical use of the <a class="xref" href="Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost__">RunDelegate(IHost, Action&lt;IHost&gt;)</a>
-method:</p>
-<pre><code>public void ConfigureServices(IServiceCollection services)
-{
-    Host.CreateDefaultBuilder()
-        .Build()
-        .RunDelegate((host) => 
-        {
-            Console.WriteLine(&quot;Hello World&quot;);
-        });
-}</code></pre>
-
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-any of the arguments are missing, or NULL.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegateAsync_" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunDelegateAsync*"></a>
-  <h4 id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegateAsync_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken_" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunDelegateAsync(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken},System.Threading.CancellationToken)">RunDelegateAsync(IHost, Action&lt;IHost, CancellationToken&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>This method runs a delegate within the context of the specified <span class="xref">Microsoft.Extensions.Hosting.IHost</span>
-object.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task RunDelegateAsync(this IHost host, Action&lt;IHost, CancellationToken&gt; action, CancellationToken token = default(CancellationToken))</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.Hosting.IHost</span></td>
-        <td><span class="parametername">host</span></td>
-        <td><p>The host to use for the operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">Microsoft.Extensions.Hosting.IHost</span>, <span class="xref">System.Threading.CancellationToken</span>&gt;</td>
-        <td><span class="parametername">action</span></td>
-        <td><p>The delegate to use for the operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
-        <td><span class="parametername">token</span></td>
-        <td><p>A cancellation token.</p>
 </td>
       </tr>
     </tbody>
@@ -238,25 +162,35 @@ object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>A task to perform the operation.</p>
+        <td><span class="xref">Microsoft.Extensions.Hosting.IHost</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td><p>The type of associated options.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegateAsync_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken__examples">Examples</h5>
-  <p>This example demostrates a typical use of the <a class="xref" href="Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunDelegateAsync_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken_">RunDelegateAsync(IHost, Action&lt;IHost, CancellationToken&gt;, CancellationToken)</a>
-method:</p>
-<pre><code>public void ConfigureServices(IServiceCollection services)
-{
-    Host.CreateDefaultBuilder()
-        .Build()
-        .RunDelegateAsync((host, token) => 
-        {
-            Console.WriteLine(&quot;Hello World&quot;);
-        });
-}</code></pre>
-
+  <h5 id="CG_Hosting_HostExtensions_SetHostedAlertHandler__1_Microsoft_Extensions_Hosting_IHost__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+The idea, with this method, is to replace the default alert handler
+with one that is capable of taking advantage of the services inside
+an <span class="xref">Microsoft.Extensions.Hosting.IHost</span> object, to process alerts with a wider variety
+of handling options. For more information see <a class="xref" href="CG.Hosting.Alerts.HostedAlertHandler-1.html">HostedAlertHandler&lt;TOptions&gt;</a>
+</p>
+</div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -269,7 +203,7 @@ method:</p>
       <tr>
         <td><span class="xref">System.ArgumentException</span></td>
         <td><p>This exception is thrown whenever
-any of the arguments are missing, or NULL.</p>
+one or more of the arguments are missing, or NULL.</p>
 </td>
       </tr>
     </tbody>
