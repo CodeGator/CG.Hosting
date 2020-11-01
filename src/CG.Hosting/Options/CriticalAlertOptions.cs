@@ -1,13 +1,12 @@
 ﻿using CG.Options;
-using CG.Serilog.Options;
 using System;
 
 namespace CG.Hosting.Options
 {
     /// <summary>
-    /// This class represents configuration settings for hosting.
+    /// This class represents configuration options for critical alert processing.
     /// </summary>
-    public class HostOptions : OptionsBase
+    public class CriticalAlertOptions : OptionsBase
     {
         // *******************************************************************
         // Properties.
@@ -16,9 +15,9 @@ namespace CG.Hosting.Options
         #region Properties
 
         /// <summary>
-        /// This property contains logging options.
+        /// This property contains options for critical error emails.
         /// </summary>
-        public SerilogOptions Logging { get; set; }
+        public EmailOptions Email { get; set; }
 
         #endregion
     }
