@@ -19,6 +19,11 @@ namespace CG.Hosting.Options
         /// </summary>
         public EmailOptions Email { get; set; }
 
+        /// <summary>
+        /// This property contains options for critical sms error messages.
+        /// </summary>
+        public SmsOptions Sms { get; set; }
+
         #endregion
     }
 }

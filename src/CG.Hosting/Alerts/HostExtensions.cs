@@ -41,7 +41,7 @@ namespace CG.Hosting
             // Validate the parameters before attempting to use them.
             Guard.Instance().ThrowIfNull(host, nameof(host));
 
-            // Set the default handler.
+            // Set the new default handler.
             Alert.Instance().SetHandler(
                 new HostedAlertHandler<TOptions>(host)
                 );

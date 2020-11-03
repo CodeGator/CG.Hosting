@@ -1,6 +1,7 @@
 ﻿using CG.Alerts;
 using CG.Email;
 using CG.Hosting.Options;
+using CG.Sms;
 using CG.Validations;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -33,27 +34,27 @@ namespace CG.Hosting.Alerts
     /// </item>
     /// <item>
     /// <term>Information</term>
-    /// <description>Logs.</description>
+    /// <description>Writes to the log.</description>
     /// </item>
     /// <item>
     /// <term>Warning</term>
-    /// <description>Logs.</description>
+    /// <description>Writes to the log.</description>
     /// </item>
     /// <item>
     /// <term>Error</term>
-    /// <description>Logs and sends email.</description>
+    /// <description>Writes to the log and email.</description>
     /// </item>
     /// <item>
     /// <term>Critical</term>
-    /// <description>Logs and sends email.</description>
+    /// <description>Writes to the log, email, and sms.</description>
     /// </item>
     /// <item>
     /// <term>Debug</term>
-    /// <description>Logs.</description>
+    /// <description>Writes to the log.</description>
     /// </item>
     /// <item>
     /// <term>Trace</term>
-    /// <description>Logs.</description>
+    /// <description>Writes to the log.</description>
     /// </item>
     /// </list>
     /// </para>
@@ -485,6 +486,7 @@ namespace CG.Hosting.Alerts
             // This handler processes critical alerts by: 
             //   (1) logging the alert.
             //   (2) Emailing the alert.
+            ///  (3) Smsing (is that a word?) the alert.
 
             // Look for the standard host options.
             var options = Host.Services.GetService<IOptions<TOptions>>();
@@ -520,6 +522,16 @@ namespace CG.Hosting.Alerts
                                         args["message"] as string
                                         );
                                 }
+
+                                // If we aren't sending emails or sms messages, then we're done.
+                                if ((null == options.Value.Alerts.CriticalAlerts.Email ||
+                                    false == options.Value.Alerts.CriticalAlerts.Email.Enabled) && 
+                                    (null == options.Value.Alerts.CriticalAlerts.Sms ||
+                                    false == options.Value.Alerts.CriticalAlerts.Sms.Enabled))
+                                {
+                                    // We handled the event.
+                                    handled = true;
+                                }
                             }
                             catch (Exception ex)
                             {
@@ -541,6 +553,18 @@ namespace CG.Hosting.Alerts
                         }
                     }
 
+                    // Create replacement tokens.
+                    var tokens = new Dictionary<string, string>(Tokens)
+                    {
+                        { "%MSG%", args["message"] as string }
+                    };
+
+                    // Should we add the original exception?
+                    if (args.ContainsKey("ex"))
+                    {
+                        tokens["%EX%"] = (args["ex"] as Exception).Message;
+                    }
+
                     // Are critical emails configured?
                     if (null != options.Value.Alerts.CriticalAlerts.Email)
                     {
@@ -555,41 +579,34 @@ namespace CG.Hosting.Alerts
                             {
                                 try
                                 {
-                                    // Create replacement tokens.
-                                    var tokens = new Dictionary<string, string>(Tokens)
-                                    {
-                                        { "%MSG%", args["message"] as string }
-                                    };
-
-                                    // Should we add the original exception?
-                                    if (args.ContainsKey("ex"))
-                                    {
-                                        tokens["%EX%"] = (args["ex"] as Exception).Message;
-                                    }
-
                                     // Render the body.
                                     var body = Template.Render(
-                                        options.Value.Alerts.ErrorAlerts.Email.Body,
+                                        options.Value.Alerts.CriticalAlerts.Email.Body,
                                         tokens
                                         );
 
                                     // Render the subject.
                                     var subject = Template.Render(
-                                        options.Value.Alerts.ErrorAlerts.Email.Subject,
+                                        options.Value.Alerts.CriticalAlerts.Email.Subject,
                                         tokens
                                         );
 
                                     // Send the email.
-                                    email.Send(
-                                        options.Value.Alerts.ErrorAlerts.Email.From,
-                                        options.Value.Alerts.ErrorAlerts.Email.To,
+                                    _ = email.Send(
+                                        options.Value.Alerts.CriticalAlerts.Email.From,
+                                        options.Value.Alerts.CriticalAlerts.Email.To,
                                         subject,
                                         body,
-                                        options.Value.Alerts.ErrorAlerts.Email.IsHtml
+                                        options.Value.Alerts.CriticalAlerts.Email.IsHtml
                                         );
 
-                                    // We handled the event.
-                                    handled = true;
+                                    // If we aren't sending sms messages then we're done.
+                                    if (null == options.Value.Alerts.CriticalAlerts.Sms ||
+                                        false == options.Value.Alerts.CriticalAlerts.Sms.Enabled)
+                                    {
+                                        // We handled the event.
+                                        handled = true;
+                                    }
                                 }
                                 catch (Exception ex)
                                 {
@@ -608,6 +625,36 @@ namespace CG.Hosting.Alerts
                                         newArgs
                                         );
                                 }
+                            }
+                        }
+                    }
+
+                    // Are critical SMS messages configured?
+                    if (null != options.Value.Alerts.CriticalAlerts.Sms)
+                    {
+                        // Are critical sms messages currently enabled?
+                        if (options.Value.Alerts.CriticalAlerts.Sms.Enabled)
+                        {
+                            // Look for an sms service on the host.
+                            var sms = Host.Services.GetService<ISmsService>();
+
+                            // Did we find one?
+                            if (null != sms)
+                            {
+                                // Render the body.
+                                var body = Template.Render(
+                                    options.Value.Alerts.ErrorAlerts.Email.Body,
+                                    tokens
+                                    );
+
+                                // Send the message.
+                                _ = sms.Send(
+                                    options.Value.Alerts.CriticalAlerts.Sms.To,
+                                    body
+                                    );
+
+                                // We handled the event.
+                                handled = true;
                             }
                         }
                     }

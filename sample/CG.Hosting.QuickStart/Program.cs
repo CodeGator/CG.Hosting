@@ -16,16 +16,12 @@ namespace CG.Hosting.QuickStart
         static void Main(string[] args)
         {
             StandardHost.CreateStandardBuilder<Program, MyOptions>()
-                //.ConfigureWebHost(webHostBuilder =>
-                //{
-                //    webHostBuilder.UseStandardExtensions();
-                //})
                 .Build()
-                .SetHostedAlertHandler<MyOptions>()
+                //.SetHostedAlertHandler<MyOptions>()
                 .RunDelegate(h =>
             {
-                Console.WriteLine("about to raise an error alert ...");
-                Alert.Instance().RaiseError("this is a test error");
+                //Console.WriteLine("about to raise an error alert ...");
+                //Alert.Instance().RaiseError("this is a test error");
 
                 Console.WriteLine();
                 Console.WriteLine("press any key to exit.");
