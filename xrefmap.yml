@@ -221,6 +221,42 @@ references:
   isSpec: "True"
   fullName: CG.Hosting.Alerts.Template.Render
   nameWithType: Template.Render
+- uid: CG.Hosting.Alerts.TokenNames
+  name: TokenNames
+  href: api/CG.Hosting.Alerts.TokenNames.html
+  commentId: T:CG.Hosting.Alerts.TokenNames
+  fullName: CG.Hosting.Alerts.TokenNames
+  nameWithType: TokenNames
+- uid: CG.Hosting.Alerts.TokenNames.APP
+  name: APP
+  href: api/CG.Hosting.Alerts.TokenNames.html#CG_Hosting_Alerts_TokenNames_APP
+  commentId: F:CG.Hosting.Alerts.TokenNames.APP
+  fullName: CG.Hosting.Alerts.TokenNames.APP
+  nameWithType: TokenNames.APP
+- uid: CG.Hosting.Alerts.TokenNames.EX
+  name: EX
+  href: api/CG.Hosting.Alerts.TokenNames.html#CG_Hosting_Alerts_TokenNames_EX
+  commentId: F:CG.Hosting.Alerts.TokenNames.EX
+  fullName: CG.Hosting.Alerts.TokenNames.EX
+  nameWithType: TokenNames.EX
+- uid: CG.Hosting.Alerts.TokenNames.MN
+  name: MN
+  href: api/CG.Hosting.Alerts.TokenNames.html#CG_Hosting_Alerts_TokenNames_MN
+  commentId: F:CG.Hosting.Alerts.TokenNames.MN
+  fullName: CG.Hosting.Alerts.TokenNames.MN
+  nameWithType: TokenNames.MN
+- uid: CG.Hosting.Alerts.TokenNames.MSG
+  name: MSG
+  href: api/CG.Hosting.Alerts.TokenNames.html#CG_Hosting_Alerts_TokenNames_MSG
+  commentId: F:CG.Hosting.Alerts.TokenNames.MSG
+  fullName: CG.Hosting.Alerts.TokenNames.MSG
+  nameWithType: TokenNames.MSG
+- uid: CG.Hosting.Alerts.TokenNames.USER
+  name: USER
+  href: api/CG.Hosting.Alerts.TokenNames.html#CG_Hosting_Alerts_TokenNames_USER
+  commentId: F:CG.Hosting.Alerts.TokenNames.USER
+  fullName: CG.Hosting.Alerts.TokenNames.USER
+  nameWithType: TokenNames.USER
 - uid: CG.Hosting.HostExtensions
   name: HostExtensions
   href: api/CG.Hosting.HostExtensions.html
@@ -396,6 +432,19 @@ references:
   commentId: T:CG.Hosting.Options.EmailOptions
   fullName: CG.Hosting.Options.EmailOptions
   nameWithType: EmailOptions
+- uid: CG.Hosting.Options.EmailOptions.#ctor
+  name: EmailOptions()
+  href: api/CG.Hosting.Options.EmailOptions.html#CG_Hosting_Options_EmailOptions__ctor
+  commentId: M:CG.Hosting.Options.EmailOptions.#ctor
+  fullName: CG.Hosting.Options.EmailOptions.EmailOptions()
+  nameWithType: EmailOptions.EmailOptions()
+- uid: CG.Hosting.Options.EmailOptions.#ctor*
+  name: EmailOptions
+  href: api/CG.Hosting.Options.EmailOptions.html#CG_Hosting_Options_EmailOptions__ctor_
+  commentId: Overload:CG.Hosting.Options.EmailOptions.#ctor
+  isSpec: "True"
+  fullName: CG.Hosting.Options.EmailOptions.EmailOptions
+  nameWithType: EmailOptions.EmailOptions
 - uid: CG.Hosting.Options.EmailOptions.Body
   name: Body
   href: api/CG.Hosting.Options.EmailOptions.html#CG_Hosting_Options_EmailOptions_Body
@@ -550,6 +599,19 @@ references:
   commentId: T:CG.Hosting.Options.SmsOptions
   fullName: CG.Hosting.Options.SmsOptions
   nameWithType: SmsOptions
+- uid: CG.Hosting.Options.SmsOptions.#ctor
+  name: SmsOptions()
+  href: api/CG.Hosting.Options.SmsOptions.html#CG_Hosting_Options_SmsOptions__ctor
+  commentId: M:CG.Hosting.Options.SmsOptions.#ctor
+  fullName: CG.Hosting.Options.SmsOptions.SmsOptions()
+  nameWithType: SmsOptions.SmsOptions()
+- uid: CG.Hosting.Options.SmsOptions.#ctor*
+  name: SmsOptions
+  href: api/CG.Hosting.Options.SmsOptions.html#CG_Hosting_Options_SmsOptions__ctor_
+  commentId: Overload:CG.Hosting.Options.SmsOptions.#ctor
+  isSpec: "True"
+  fullName: CG.Hosting.Options.SmsOptions.SmsOptions
+  nameWithType: SmsOptions.SmsOptions
 - uid: CG.Hosting.Options.SmsOptions.Body
   name: Body
   href: api/CG.Hosting.Options.SmsOptions.html#CG_Hosting_Options_SmsOptions_Body
