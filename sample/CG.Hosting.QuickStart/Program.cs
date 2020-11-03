@@ -17,7 +17,7 @@ namespace CG.Hosting.QuickStart
         {
             StandardHost.CreateStandardBuilder<Program, MyOptions>()
                 .Build()
-                //.SetHostedAlertHandler<MyOptions>()
+                .SetHostedAlertHandler<MyOptions>()
                 .RunDelegate(h =>
             {
                 Console.WriteLine("about to raise a critical error alert ...");

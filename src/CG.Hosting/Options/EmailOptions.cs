@@ -52,5 +52,23 @@ namespace CG.Hosting.Options
         public bool IsHtml { get; set; }
 
         #endregion
+
+        // *******************************************************************
+        // Constructors.
+        // *******************************************************************
+
+        #region Constructors
+
+        /// <summary>
+        /// This constructor creates a new instance of the <see cref="EmailOptions"/>
+        /// class.
+        /// </summary>
+        public EmailOptions()
+        {
+            // Set any defaults.
+            Enabled = true;
+        }
+
+        #endregion
     }
 }

@@ -1,5 +1,4 @@
-﻿using CG.Email;
-using CG.Validations;
+﻿using CG.Validations;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
