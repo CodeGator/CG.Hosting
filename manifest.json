@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Hosting.Alerts.HostedAlertHandler-1.html",
-          "hash": "9G4A7r03NyOUo+Q+IqxFdg=="
+          "hash": "3EqCc/uBcPZOUDZ0/HLLEw=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Hosting.Options.CriticalAlertOptions.html",
-          "hash": "Cv5QW5yVNmaIC0mz1KgeYw=="
+          "hash": "4yAm9mpxz0L45GZ3xXlEJw=="
         }
       },
       "is_incremental": false,
@@ -150,7 +150,19 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Hosting.Options.ServiceOptions.html",
-          "hash": "osZzKz1fVAE3VNoVrucukg=="
+          "hash": "xEmw4VnvgF+xTq9JO83gxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Hosting.Options.SmsOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Hosting.Options.SmsOptions.html",
+          "hash": "ySphalL7k+TY6SwisZl51A=="
         }
       },
       "is_incremental": false,
@@ -198,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Hosting.Options.html",
-          "hash": "2TmY/AHfv04vFipMJJX3yw=="
+          "hash": "/ZAdxpyJYjq2WFkwbC7oIg=="
         }
       },
       "is_incremental": false,
@@ -306,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "kdL55yzKSaoUkuN47VR7SQ=="
+          "hash": "TVsDgHA7DWfylPESXSNCjg=="
         }
       },
       "is_incremental": false,
@@ -381,7 +393,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 24,
+          "total_file_count": 25,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

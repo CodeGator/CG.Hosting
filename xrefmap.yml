@@ -371,6 +371,19 @@ references:
   isSpec: "True"
   fullName: CG.Hosting.Options.CriticalAlertOptions.Email
   nameWithType: CriticalAlertOptions.Email
+- uid: CG.Hosting.Options.CriticalAlertOptions.Sms
+  name: Sms
+  href: api/CG.Hosting.Options.CriticalAlertOptions.html#CG_Hosting_Options_CriticalAlertOptions_Sms
+  commentId: P:CG.Hosting.Options.CriticalAlertOptions.Sms
+  fullName: CG.Hosting.Options.CriticalAlertOptions.Sms
+  nameWithType: CriticalAlertOptions.Sms
+- uid: CG.Hosting.Options.CriticalAlertOptions.Sms*
+  name: Sms
+  href: api/CG.Hosting.Options.CriticalAlertOptions.html#CG_Hosting_Options_CriticalAlertOptions_Sms_
+  commentId: Overload:CG.Hosting.Options.CriticalAlertOptions.Sms
+  isSpec: "True"
+  fullName: CG.Hosting.Options.CriticalAlertOptions.Sms
+  nameWithType: CriticalAlertOptions.Sms
 - uid: CG.Hosting.Options.DebugAlertOptions
   name: DebugAlertOptions
   href: api/CG.Hosting.Options.DebugAlertOptions.html
@@ -518,6 +531,64 @@ references:
   isSpec: "True"
   fullName: CG.Hosting.Options.ServiceOptions.Logging
   nameWithType: ServiceOptions.Logging
+- uid: CG.Hosting.Options.ServiceOptions.Sms
+  name: Sms
+  href: api/CG.Hosting.Options.ServiceOptions.html#CG_Hosting_Options_ServiceOptions_Sms
+  commentId: P:CG.Hosting.Options.ServiceOptions.Sms
+  fullName: CG.Hosting.Options.ServiceOptions.Sms
+  nameWithType: ServiceOptions.Sms
+- uid: CG.Hosting.Options.ServiceOptions.Sms*
+  name: Sms
+  href: api/CG.Hosting.Options.ServiceOptions.html#CG_Hosting_Options_ServiceOptions_Sms_
+  commentId: Overload:CG.Hosting.Options.ServiceOptions.Sms
+  isSpec: "True"
+  fullName: CG.Hosting.Options.ServiceOptions.Sms
+  nameWithType: ServiceOptions.Sms
+- uid: CG.Hosting.Options.SmsOptions
+  name: SmsOptions
+  href: api/CG.Hosting.Options.SmsOptions.html
+  commentId: T:CG.Hosting.Options.SmsOptions
+  fullName: CG.Hosting.Options.SmsOptions
+  nameWithType: SmsOptions
+- uid: CG.Hosting.Options.SmsOptions.Body
+  name: Body
+  href: api/CG.Hosting.Options.SmsOptions.html#CG_Hosting_Options_SmsOptions_Body
+  commentId: P:CG.Hosting.Options.SmsOptions.Body
+  fullName: CG.Hosting.Options.SmsOptions.Body
+  nameWithType: SmsOptions.Body
+- uid: CG.Hosting.Options.SmsOptions.Body*
+  name: Body
+  href: api/CG.Hosting.Options.SmsOptions.html#CG_Hosting_Options_SmsOptions_Body_
+  commentId: Overload:CG.Hosting.Options.SmsOptions.Body
+  isSpec: "True"
+  fullName: CG.Hosting.Options.SmsOptions.Body
+  nameWithType: SmsOptions.Body
+- uid: CG.Hosting.Options.SmsOptions.Enabled
+  name: Enabled
+  href: api/CG.Hosting.Options.SmsOptions.html#CG_Hosting_Options_SmsOptions_Enabled
+  commentId: P:CG.Hosting.Options.SmsOptions.Enabled
+  fullName: CG.Hosting.Options.SmsOptions.Enabled
+  nameWithType: SmsOptions.Enabled
+- uid: CG.Hosting.Options.SmsOptions.Enabled*
+  name: Enabled
+  href: api/CG.Hosting.Options.SmsOptions.html#CG_Hosting_Options_SmsOptions_Enabled_
+  commentId: Overload:CG.Hosting.Options.SmsOptions.Enabled
+  isSpec: "True"
+  fullName: CG.Hosting.Options.SmsOptions.Enabled
+  nameWithType: SmsOptions.Enabled
+- uid: CG.Hosting.Options.SmsOptions.To
+  name: To
+  href: api/CG.Hosting.Options.SmsOptions.html#CG_Hosting_Options_SmsOptions_To
+  commentId: P:CG.Hosting.Options.SmsOptions.To
+  fullName: CG.Hosting.Options.SmsOptions.To
+  nameWithType: SmsOptions.To
+- uid: CG.Hosting.Options.SmsOptions.To*
+  name: To
+  href: api/CG.Hosting.Options.SmsOptions.html#CG_Hosting_Options_SmsOptions_To_
+  commentId: Overload:CG.Hosting.Options.SmsOptions.To
+  isSpec: "True"
+  fullName: CG.Hosting.Options.SmsOptions.To
+  nameWithType: SmsOptions.To
 - uid: CG.Hosting.Options.StandardOptions
   name: StandardOptions
   href: api/CG.Hosting.Options.StandardOptions.html

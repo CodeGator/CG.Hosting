@@ -152,7 +152,7 @@ The idea, with this class, is to create a set of handlers that are able
 to use the services of the associated <span class="xref">Microsoft.Extensions.Hosting.IHost</span> object to do
 more useful things when processing alerts. In this case, these handlers
 process alerts like this:
-<table><thead><tr><th>Alert Type</th><th>Processing Action</th></tr></thead><tbody><tr><td>Audit</td><td>Writes to the console window.</td></tr><tr><td>Information</td><td>Logs.</td></tr><tr><td>Warning</td><td>Logs.</td></tr><tr><td>Error</td><td>Logs and sends email.</td></tr><tr><td>Critical</td><td>Logs and sends email.</td></tr><tr><td>Debug</td><td>Logs.</td></tr><tr><td>Trace</td><td>Logs.</td></tr></tbody></table>
+<table><thead><tr><th>Alert Type</th><th>Processing Action</th></tr></thead><tbody><tr><td>Audit</td><td>Writes to the console window.</td></tr><tr><td>Information</td><td>Writes to the log.</td></tr><tr><td>Warning</td><td>Writes to the log.</td></tr><tr><td>Error</td><td>Writes to the log and email.</td></tr><tr><td>Critical</td><td>Writes to the log, email, and sms.</td></tr><tr><td>Debug</td><td>Writes to the log.</td></tr><tr><td>Trace</td><td>Writes to the log.</td></tr></tbody></table>
 </p>
 </div>
   <h3 id="constructors">Constructors
