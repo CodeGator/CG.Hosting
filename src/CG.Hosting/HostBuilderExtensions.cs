@@ -139,6 +139,11 @@ namespace Microsoft.Extensions.Hosting
                 services.AddEmail(
                     configuration.GetSection("Services:Email")
                     );
+
+                // Configure the sms service.
+                services.AddSms(
+                    configuration.GetSection("Services:Sms")
+                    );
             });
 
             // Return the builder.

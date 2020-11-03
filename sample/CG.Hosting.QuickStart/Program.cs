@@ -20,8 +20,8 @@ namespace CG.Hosting.QuickStart
                 //.SetHostedAlertHandler<MyOptions>()
                 .RunDelegate(h =>
             {
-                //Console.WriteLine("about to raise an error alert ...");
-                //Alert.Instance().RaiseError("this is a test error");
+                Console.WriteLine("about to raise a critical error alert ...");
+                Alert.Instance().RaiseCritical("this is a test error");
 
                 Console.WriteLine();
                 Console.WriteLine("press any key to exit.");
