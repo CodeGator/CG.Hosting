@@ -17,6 +17,7 @@ Platforms supported:
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/CodeGator/CG.Hosting</RepositoryUrl>
+    <PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -24,17 +25,24 @@ Platforms supported:
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CG.Alerts" Version="2020.1.6" />
-    <PackageReference Include="CG.Email" Version="2020.2.14" />
-    <PackageReference Include="CG.Options" Version="2020.1.15" />
+    <PackageReference Include="CG.Alerts" Version="2020.1.7" />
+    <PackageReference Include="CG.Email" Version="2020.2.15" />
+    <PackageReference Include="CG.Options" Version="2020.1.16" />
     <PackageReference Include="CG.Serilog" Version="2020.1.13" />
-    <PackageReference Include="CG.Sms" Version="2020.2.7" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.9" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.9" />
+    <PackageReference Include="CG.Sms" Version="2020.2.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
     <PackageReference Include="Nerdbank.GitVersioning" Version="3.3.37">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\packageDefaultIcon-50x50.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
