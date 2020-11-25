@@ -105,9 +105,9 @@ namespace CG.Hosting.Alerts
             // Create the fixed replacement tokens whose values will never change.
             Tokens = new Dictionary<string, string>()
             {
-                { "%APP%", AppDomain.CurrentDomain.FriendlyNameEx(true) },
-                { "%MN%", Environment.MachineName },
-                { "%USER%",  Environment.UserName }
+                { TokenNames.APP, AppDomain.CurrentDomain.FriendlyNameEx(true) },
+                { TokenNames.MN, Environment.MachineName },
+                { TokenNames.USER,  Environment.UserName }
             };
         }
 
@@ -396,13 +396,13 @@ namespace CG.Hosting.Alerts
                                     // Create replacement tokens.
                                     var tokens = new Dictionary<string, string>(Tokens)
                                     {
-                                        { "%MSG%", args["message"] as string }
+                                        { TokenNames.MSG, args["message"] as string }
                                     };
 
                                     // Should we add the original exception?
                                     if (args.ContainsKey("ex"))
                                     {
-                                        tokens["%EX%"] = (args["ex"] as Exception).Message;
+                                        tokens[TokenNames.EX] = (args["ex"] as Exception).Message;
                                     }
 
                                     // Render the body.
@@ -556,13 +556,13 @@ namespace CG.Hosting.Alerts
                     // Create replacement tokens.
                     var tokens = new Dictionary<string, string>(Tokens)
                     {
-                        { "%MSG%", args["message"] as string }
+                        { TokenNames.MSG, args["message"] as string }
                     };
 
                     // Should we add the original exception?
                     if (args.ContainsKey("ex"))
                     {
-                        tokens["%EX%"] = (args["ex"] as Exception).Message;
+                        tokens[TokenNames.EX] = (args["ex"] as Exception).Message;
                     }
 
                     // Are critical emails configured?
@@ -643,7 +643,7 @@ namespace CG.Hosting.Alerts
                             {
                                 // Render the body.
                                 var body = Template.Render(
-                                    options.Value.Alerts.ErrorAlerts.Email.Body,
+                                    options.Value.Alerts.CriticalAlerts.Sms.Body,
                                     tokens
                                     );
 
@@ -668,7 +668,7 @@ namespace CG.Hosting.Alerts
                 //   we'll give the base class a chance at it.
 
                 // Give the base class a chance.
-                base.HandleError(
+                base.HandleCritical(
                     args,
                     memberName,
                     sourceFilePath,
