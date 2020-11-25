@@ -668,7 +668,7 @@ namespace CG.Hosting.Alerts
                 //   we'll give the base class a chance at it.
 
                 // Give the base class a chance.
-                base.HandleError(
+                base.HandleCritical(
                     args,
                     memberName,
                     sourceFilePath,
