@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class HostExtensions
    ">
-    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -255,6 +255,221 @@ method:</p>
         {
             Console.WriteLine(&quot;Hello World&quot;);
         });
+}</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown whenever
+any of the arguments are missing, or NULL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Microsoft_Extensions_Hosting_HostExtensions_RunOnce_" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunOnce*"></a>
+  <h4 id="Microsoft_Extensions_Hosting_HostExtensions_RunOnce__1_Microsoft_Extensions_Hosting_IHost_System_Action_" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunOnce``1(Microsoft.Extensions.Hosting.IHost,System.Action)">RunOnce&lt;TProgram&gt;(IHost, Action)</h4>
+  <div class="markdown level1 summary"><p>This method runs a delegate within the context of the specified <span class="xref">Microsoft.Extensions.Hosting.IHost</span>
+object, allowing a single instance at any given time to run on the
+given machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RunOnce&lt;TProgram&gt;(this IHost host, Action action)
+    where TProgram : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Hosting.IHost</span></td>
+        <td><span class="parametername">host</span></td>
+        <td><p>The host to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The delegate to use for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the delegate was run; false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TProgram</span></td>
+        <td><p>The type of associated .NET program</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Extensions_Hosting_HostExtensions_RunOnce__1_Microsoft_Extensions_Hosting_IHost_System_Action__examples">Examples</h5>
+  <p>This example demonstrates how to use the <a class="xref" href="Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunOnce__1_Microsoft_Extensions_Hosting_IHost_System_Action_">RunOnce&lt;TProgram&gt;(IHost, Action)</a>
+method:</p>
+<pre><code>class TestProgram
+{
+    static void Main(string[] args)
+    {
+       Host.CreateDefaultBuilder()
+           .Build()
+          .RunOnce((host) => 
+          {
+              Console.WriteLine(&quot;Hello World&quot;);
+          });
+    }
+}</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown whenever
+any of the arguments are missing, or NULL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Microsoft_Extensions_Hosting_HostExtensions_RunOnceAsync_" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunOnceAsync*"></a>
+  <h4 id="Microsoft_Extensions_Hosting_HostExtensions_RunOnceAsync__1_Microsoft_Extensions_Hosting_IHost_System_Action_System_Threading_CancellationToken_" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunOnceAsync``1(Microsoft.Extensions.Hosting.IHost,System.Action,System.Threading.CancellationToken)">RunOnceAsync&lt;TProgram&gt;(IHost, Action, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This method runs a delegate within the context of the specified <span class="xref">Microsoft.Extensions.Hosting.IHost</span>
+object, allowing a single instance at any given time to run on the
+given machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;bool&gt; RunOnceAsync&lt;TProgram&gt;(this IHost host, Action action, CancellationToken cancellationToken = default(CancellationToken))
+    where TProgram : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Hosting.IHost</span></td>
+        <td><span class="parametername">host</span></td>
+        <td><p>The host to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The delegate to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>True if the delegate was run; false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TProgram</span></td>
+        <td><p>The type of associated .NET program</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Extensions_Hosting_HostExtensions_RunOnceAsync__1_Microsoft_Extensions_Hosting_IHost_System_Action_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+This method is intended to wrap the logic in the main entry point of
+a .NET process. It then prevents that logic from being run more than 
+once simultaneously. 
+</p>
+</div>
+  <h5 id="Microsoft_Extensions_Hosting_HostExtensions_RunOnceAsync__1_Microsoft_Extensions_Hosting_IHost_System_Action_System_Threading_CancellationToken__examples">Examples</h5>
+  <p>This example demonstrates how to use the <a class="xref" href="Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunOnceAsync__1_Microsoft_Extensions_Hosting_IHost_System_Action_System_Threading_CancellationToken_">RunOnceAsync&lt;TProgram&gt;(IHost, Action, CancellationToken)</a>
+method:</p>
+<pre><code>class TestProgram
+{
+    static async Task Main(string[] args)
+    {
+       await Host.CreateDefaultBuilder()
+           .Build()
+          .RunOnceAsync((host) => 
+          {
+              Console.WriteLine(&quot;Hello World&quot;);
+          });
+    }
 }</code></pre>
 
   <h5 class="exceptions">Exceptions</h5>
