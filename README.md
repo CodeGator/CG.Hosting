@@ -6,6 +6,7 @@
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Hosting/index.html)
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Hosting.svg?style=flat)](https://nuget.org/packages/CG.Hosting)
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Hosting/20)
+[![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Hosting/discussions)
 
 #### What does it do?
 The package contains standard hosting extensions used by other CodeGator packages.
