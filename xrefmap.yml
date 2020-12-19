@@ -843,15 +843,15 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Hosting.HostExtensions.RunOnce
   nameWithType: HostExtensions.RunOnce
-- uid: Microsoft.Extensions.Hosting.HostExtensions.RunOnce``1(Microsoft.Extensions.Hosting.IHost,System.Action)
-  name: RunOnce<TProgram>(IHost, Action)
-  href: api/Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunOnce__1_Microsoft_Extensions_Hosting_IHost_System_Action_
-  commentId: M:Microsoft.Extensions.Hosting.HostExtensions.RunOnce``1(Microsoft.Extensions.Hosting.IHost,System.Action)
-  name.vb: RunOnce(Of TProgram)(IHost, Action)
-  fullName: Microsoft.Extensions.Hosting.HostExtensions.RunOnce<TProgram>(Microsoft.Extensions.Hosting.IHost, System.Action)
-  fullName.vb: Microsoft.Extensions.Hosting.HostExtensions.RunOnce(Of TProgram)(Microsoft.Extensions.Hosting.IHost, System.Action)
-  nameWithType: HostExtensions.RunOnce<TProgram>(IHost, Action)
-  nameWithType.vb: HostExtensions.RunOnce(Of TProgram)(IHost, Action)
+- uid: Microsoft.Extensions.Hosting.HostExtensions.RunOnce``1(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost})
+  name: RunOnce<TProgram>(IHost, Action<IHost>)
+  href: api/Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunOnce__1_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost__
+  commentId: M:Microsoft.Extensions.Hosting.HostExtensions.RunOnce``1(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost})
+  name.vb: RunOnce(Of TProgram)(IHost, Action(Of IHost))
+  fullName: Microsoft.Extensions.Hosting.HostExtensions.RunOnce<TProgram>(Microsoft.Extensions.Hosting.IHost, System.Action<Microsoft.Extensions.Hosting.IHost>)
+  fullName.vb: Microsoft.Extensions.Hosting.HostExtensions.RunOnce(Of TProgram)(Microsoft.Extensions.Hosting.IHost, System.Action(Of Microsoft.Extensions.Hosting.IHost))
+  nameWithType: HostExtensions.RunOnce<TProgram>(IHost, Action<IHost>)
+  nameWithType.vb: HostExtensions.RunOnce(Of TProgram)(IHost, Action(Of IHost))
 - uid: Microsoft.Extensions.Hosting.HostExtensions.RunOnceAsync*
   name: RunOnceAsync
   href: api/Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunOnceAsync_
@@ -859,12 +859,12 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Hosting.HostExtensions.RunOnceAsync
   nameWithType: HostExtensions.RunOnceAsync
-- uid: Microsoft.Extensions.Hosting.HostExtensions.RunOnceAsync``1(Microsoft.Extensions.Hosting.IHost,System.Action,System.Threading.CancellationToken)
-  name: RunOnceAsync<TProgram>(IHost, Action, CancellationToken)
-  href: api/Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunOnceAsync__1_Microsoft_Extensions_Hosting_IHost_System_Action_System_Threading_CancellationToken_
-  commentId: M:Microsoft.Extensions.Hosting.HostExtensions.RunOnceAsync``1(Microsoft.Extensions.Hosting.IHost,System.Action,System.Threading.CancellationToken)
-  name.vb: RunOnceAsync(Of TProgram)(IHost, Action, CancellationToken)
-  fullName: Microsoft.Extensions.Hosting.HostExtensions.RunOnceAsync<TProgram>(Microsoft.Extensions.Hosting.IHost, System.Action, System.Threading.CancellationToken)
-  fullName.vb: Microsoft.Extensions.Hosting.HostExtensions.RunOnceAsync(Of TProgram)(Microsoft.Extensions.Hosting.IHost, System.Action, System.Threading.CancellationToken)
-  nameWithType: HostExtensions.RunOnceAsync<TProgram>(IHost, Action, CancellationToken)
-  nameWithType.vb: HostExtensions.RunOnceAsync(Of TProgram)(IHost, Action, CancellationToken)
+- uid: Microsoft.Extensions.Hosting.HostExtensions.RunOnceAsync``1(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost},System.Threading.CancellationToken)
+  name: RunOnceAsync<TProgram>(IHost, Action<IHost>, CancellationToken)
+  href: api/Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunOnceAsync__1_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost__System_Threading_CancellationToken_
+  commentId: M:Microsoft.Extensions.Hosting.HostExtensions.RunOnceAsync``1(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost},System.Threading.CancellationToken)
+  name.vb: RunOnceAsync(Of TProgram)(IHost, Action(Of IHost), CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.HostExtensions.RunOnceAsync<TProgram>(Microsoft.Extensions.Hosting.IHost, System.Action<Microsoft.Extensions.Hosting.IHost>, System.Threading.CancellationToken)
+  fullName.vb: Microsoft.Extensions.Hosting.HostExtensions.RunOnceAsync(Of TProgram)(Microsoft.Extensions.Hosting.IHost, System.Action(Of Microsoft.Extensions.Hosting.IHost), System.Threading.CancellationToken)
+  nameWithType: HostExtensions.RunOnceAsync<TProgram>(IHost, Action<IHost>, CancellationToken)
+  nameWithType.vb: HostExtensions.RunOnceAsync(Of TProgram)(IHost, Action(Of IHost), CancellationToken)
