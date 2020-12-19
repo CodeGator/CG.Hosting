@@ -1,6 +1,5 @@
 ﻿using CG;
 using CG.Reflection;
-using CG.Utilities;
 using CG.Validations;
 using System;
 using System.Threading;
@@ -41,7 +40,7 @@ namespace Microsoft.Extensions.Hosting
         ///         .RunDelegateAsync((host, token) => 
         ///         {
         ///             Console.WriteLine("Hello World");
-        ///         });
+        ///         }).Result;
         /// }
         /// </code>
         /// </example>
@@ -114,7 +113,7 @@ namespace Microsoft.Extensions.Hosting
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// any of the arguments are missing, or NULL.</exception>
         /// <example>
-        /// This example demonstrates how to use the <see cref="RunOnce{TProgram}(IHost, Action)"/> 
+        /// This example demonstrates how to use the <see cref="RunOnce{TProgram}(IHost, Action{IHost})"/> 
         /// method:
         /// <code>
         /// class TestProgram
@@ -123,7 +122,7 @@ namespace Microsoft.Extensions.Hosting
         ///     {
         ///        Host.CreateDefaultBuilder()
         ///            .Build()
-        ///           .RunOnce((host) => 
+        ///           .RunOnce(host => 
         ///           {
         ///               Console.WriteLine("Hello World");
         ///           });
@@ -133,7 +132,7 @@ namespace Microsoft.Extensions.Hosting
         /// </example>
         public static bool RunOnce<TProgram>(
             this IHost host,
-            Action action
+            Action<IHost> action
             ) where TProgram : class
         {
             // Validate the parameters before attempting to use them.
@@ -163,7 +162,7 @@ namespace Microsoft.Extensions.Hosting
                         try
                         {
                             // Run the delegate.
-                            action.Invoke();
+                            action.Invoke(host);
 
                             // Return the results.
                             return true;
@@ -187,14 +186,8 @@ namespace Microsoft.Extensions.Hosting
                         ex.Mutex.ReleaseMutex();
                     }
 
-                    // Retry the operation.
-                    if (false == Retry.Instance().Execute(
-                        () => host.RunOnce<TProgram>(action)
-                        ))
-                    {
-                        // Retry failed, so panic!
-                        throw;
-                    }
+                    // Run the delegate.
+                    action.Invoke(host);
                 }
             }
 
@@ -224,7 +217,7 @@ namespace Microsoft.Extensions.Hosting
         /// </para>
         /// </remarks>
         /// <example>
-        /// This example demonstrates how to use the <see cref="RunOnceAsync{TProgram}(IHost, Action, CancellationToken)"/> 
+        /// This example demonstrates how to use the <see cref="RunOnceAsync{TProgram}(IHost, Action{IHost}, CancellationToken)"/> 
         /// method:
         /// <code>
         /// class TestProgram
@@ -243,7 +236,7 @@ namespace Microsoft.Extensions.Hosting
         /// </example>
         public static async Task<bool> RunOnceAsync<TProgram>(
             this IHost host,
-            Action action,
+            Action<IHost> action,
             CancellationToken cancellationToken = default
             ) where TProgram : class
         {
@@ -275,7 +268,7 @@ namespace Microsoft.Extensions.Hosting
                         {
                             // Run the delegate.
                             await Task.Run(
-                                action,
+                                () => action(host),
                                 cancellationToken
                                 ).ConfigureAwait(false);
 
@@ -301,14 +294,11 @@ namespace Microsoft.Extensions.Hosting
                         ex.Mutex.ReleaseMutex();
                     }
 
-                    // Retry the operation.
-                    if (false == await Retry.Instance().ExecuteAsync(
-                        () => host.RunOnceAsync<TProgram>(action)
-                        ))
-                    {
-                        // Retry failed, so panic!
-                        throw;
-                    }
+                    // Run the delegate.
+                    await Task.Run(
+                        () => action(host),
+                        cancellationToken
+                        ).ConfigureAwait(false);
                 }
             }
 
