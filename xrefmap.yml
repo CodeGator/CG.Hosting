@@ -554,19 +554,6 @@ references:
   commentId: T:CG.Hosting.Options.ServiceOptions
   fullName: CG.Hosting.Options.ServiceOptions
   nameWithType: ServiceOptions
-- uid: CG.Hosting.Options.ServiceOptions.Email
-  name: Email
-  href: api/CG.Hosting.Options.ServiceOptions.html#CG_Hosting_Options_ServiceOptions_Email
-  commentId: P:CG.Hosting.Options.ServiceOptions.Email
-  fullName: CG.Hosting.Options.ServiceOptions.Email
-  nameWithType: ServiceOptions.Email
-- uid: CG.Hosting.Options.ServiceOptions.Email*
-  name: Email
-  href: api/CG.Hosting.Options.ServiceOptions.html#CG_Hosting_Options_ServiceOptions_Email_
-  commentId: Overload:CG.Hosting.Options.ServiceOptions.Email
-  isSpec: "True"
-  fullName: CG.Hosting.Options.ServiceOptions.Email
-  nameWithType: ServiceOptions.Email
 - uid: CG.Hosting.Options.ServiceOptions.Logging
   name: Logging
   href: api/CG.Hosting.Options.ServiceOptions.html#CG_Hosting_Options_ServiceOptions_Logging
@@ -580,19 +567,6 @@ references:
   isSpec: "True"
   fullName: CG.Hosting.Options.ServiceOptions.Logging
   nameWithType: ServiceOptions.Logging
-- uid: CG.Hosting.Options.ServiceOptions.Sms
-  name: Sms
-  href: api/CG.Hosting.Options.ServiceOptions.html#CG_Hosting_Options_ServiceOptions_Sms
-  commentId: P:CG.Hosting.Options.ServiceOptions.Sms
-  fullName: CG.Hosting.Options.ServiceOptions.Sms
-  nameWithType: ServiceOptions.Sms
-- uid: CG.Hosting.Options.ServiceOptions.Sms*
-  name: Sms
-  href: api/CG.Hosting.Options.ServiceOptions.html#CG_Hosting_Options_ServiceOptions_Sms_
-  commentId: Overload:CG.Hosting.Options.ServiceOptions.Sms
-  isSpec: "True"
-  fullName: CG.Hosting.Options.ServiceOptions.Sms
-  nameWithType: ServiceOptions.Sms
 - uid: CG.Hosting.Options.SmsOptions
   name: SmsOptions
   href: api/CG.Hosting.Options.SmsOptions.html
