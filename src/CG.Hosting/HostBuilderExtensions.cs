@@ -58,7 +58,7 @@ namespace Microsoft.Extensions.Hosting
             });
 
             // Add Serilog services.
-            hostBuilder.AddSerilog();
+            hostBuilder.AddStandardSerilog();
 
             // Return the builder.
             return hostBuilder;
@@ -123,7 +123,7 @@ namespace Microsoft.Extensions.Hosting
             });
 
             // Add Serilog services.
-            hostBuilder.AddSerilog();
+            hostBuilder.AddStandardSerilog();
 
             // Add email services.
             hostBuilder.ConfigureServices((context, services) =>

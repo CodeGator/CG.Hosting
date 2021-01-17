@@ -1,6 +1,5 @@
 ﻿using CG.Alerts;
 using CG.Hosting.Options;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using System;
 
