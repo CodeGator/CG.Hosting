@@ -1,6 +1,5 @@
 # CG.Hosting: 
 
-
 ---
 [![Build Status](https://dev.azure.com/codegator/CG.Hosting/_apis/build/status/CodeGator.CG.Hosting?branchName=master)](https://dev.azure.com/codegator/CG.Hosting/_build/latest?definitionId=20&branchName=master)
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Hosting/index.html)
@@ -20,7 +19,7 @@ The package contains standard hosting extensions used by other CodeGator package
 * Microsoft.Extensions.Hosting.HostExtensions
 
 #### What platform(s) does it support?
-* .NET Standard 2.x or higher
+* .NET 5.x or higher
 
 #### How do I install it?
 The binary is hosted on [NuGet](https://www.nuget.org/packages/CG.Hosting). To install the package using the NuGet package manager:
