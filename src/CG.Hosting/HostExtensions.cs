@@ -54,11 +54,21 @@ namespace Microsoft.Extensions.Hosting
             Guard.Instance().ThrowIfNull(host, nameof(host))
                 .ThrowIfNull(action, nameof(action));
 
-            // Run the action asynchronously.
-            await Task.Run(
-                () => action(host, token),
-                token
-                ).ConfigureAwait(false);
+            try
+            {
+                // Run the action asynchronously.
+                await Task.Run(
+                    () => action(host, token),
+                    token
+                    ).ConfigureAwait(false);
+            }
+            finally
+            {
+                // Stop the host.
+                await host.StopAsync(
+                    token
+                    ).ConfigureAwait(false);
+            }
         }
 
         // *******************************************************************
@@ -95,8 +105,16 @@ namespace Microsoft.Extensions.Hosting
             Guard.Instance().ThrowIfNull(host, nameof(host))
                 .ThrowIfNull(action, nameof(action));
 
-            // Run the action.
-            action(host);
+            try
+            {
+                // Run the action.
+                action(host);
+            }
+            finally
+            {
+                // Stop the host.
+                host.StopAsync().Wait();
+            }
         }
 
         // *******************************************************************
@@ -188,6 +206,11 @@ namespace Microsoft.Extensions.Hosting
 
                     // Run the delegate.
                     action.Invoke(host);
+                }
+                finally
+                {
+                    // Stop the host.
+                    host.StopAsync().Wait();
                 }
             }
 
@@ -297,6 +320,13 @@ namespace Microsoft.Extensions.Hosting
                     // Run the delegate.
                     await Task.Run(
                         () => action(host),
+                        cancellationToken
+                        ).ConfigureAwait(false);
+                }
+                finally
+                {
+                    // Stop the host.
+                    await host.StopAsync(
                         cancellationToken
                         ).ConfigureAwait(false);
                 }

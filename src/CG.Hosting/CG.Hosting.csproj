@@ -27,7 +27,7 @@ Platforms supported:
   <ItemGroup>
     <PackageReference Include="CG.Alerts" Version="2021.2.2" />
     <PackageReference Include="CG.Email" Version="2021.2.1" />
-    <PackageReference Include="CG.Options" Version="2021.4.5" />
+    <PackageReference Include="CG.Options" Version="2021.4.6" />
     <PackageReference Include="CG.Serilog" Version="2021.2.2" />
     <PackageReference Include="CG.Sms" Version="2021.2.2" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
