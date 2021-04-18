@@ -254,11 +254,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.yml",
+      "source_relative_path": "api/Microsoft.AspNetCore.Hosting.HostingWebHostBuilderExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.html",
-          "hash": "a1UNICb4sbIHZiTlvvjTizHgKVUk4Zpz11ZQMhhqaac="
+          "relative_path": "api/Microsoft.AspNetCore.Hosting.HostingWebHostBuilderExtensions.html",
+          "hash": "iSOfdJ8XZXBBNEnaqfrZ4BDhb2wwooWfx27BEyEDRaE="
         }
       },
       "is_incremental": false,
@@ -270,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Hosting.html",
-          "hash": "aLQ48sML680VGr9W7TvrNINrwfkstqEJoIv6nfpw+QA="
+          "hash": "jwXCsOFGNSbPvjBfb2wzMv3kwwwROQWd9KPUD30Qzns="
         }
       },
       "is_incremental": false,
@@ -290,18 +290,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.Hosting.HostBuilderExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html",
-          "hash": "qxWZnFaYhKyebvBoEqlOECGhK/q89gvO+EywCweZm3Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.Extensions.Hosting.HostExtensions.yml",
       "output": {
         ".html": {
@@ -314,11 +302,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html",
+          "hash": "kbIENphGlA43OyG9JWRe4xJUKB+Y9R58TcuKIZghvWE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.Extensions.Hosting.yml",
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Hosting.html",
-          "hash": "KCXYlH1BZKwxRm42t4iKc92r9UL8Ovdhfm/gWBQjHGI="
+          "hash": "yhIZe1nt11ZioRv1n1QDMkemXq9riikzQnGbuOANoD8="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "/9P5DGe9Xwg0ltHjx3LxmUU6JAKoT0eeOTnw9W5arHs="
+          "hash": "IfxYgM/LZFYvirDVsaPk6Y7/r5UgvmZbvaeka86h0K0="
         }
       },
       "is_incremental": false,

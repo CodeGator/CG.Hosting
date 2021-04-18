@@ -697,25 +697,25 @@ references:
   commentId: N:Microsoft.AspNetCore.Hosting
   fullName: Microsoft.AspNetCore.Hosting
   nameWithType: Microsoft.AspNetCore.Hosting
-- uid: Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions
-  name: WebHostBuilderExtensions
-  href: api/Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.html
-  commentId: T:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions
-  fullName: Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions
-  nameWithType: WebHostBuilderExtensions
-- uid: Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStandardExtensions(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+- uid: Microsoft.AspNetCore.Hosting.HostingWebHostBuilderExtensions
+  name: HostingWebHostBuilderExtensions
+  href: api/Microsoft.AspNetCore.Hosting.HostingWebHostBuilderExtensions.html
+  commentId: T:Microsoft.AspNetCore.Hosting.HostingWebHostBuilderExtensions
+  fullName: Microsoft.AspNetCore.Hosting.HostingWebHostBuilderExtensions
+  nameWithType: HostingWebHostBuilderExtensions
+- uid: Microsoft.AspNetCore.Hosting.HostingWebHostBuilderExtensions.UseStandardExtensions(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
   name: UseStandardExtensions(IWebHostBuilder)
-  href: api/Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.html#Microsoft_AspNetCore_Hosting_WebHostBuilderExtensions_UseStandardExtensions_Microsoft_AspNetCore_Hosting_IWebHostBuilder_
-  commentId: M:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStandardExtensions(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
-  fullName: Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStandardExtensions(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
-  nameWithType: WebHostBuilderExtensions.UseStandardExtensions(IWebHostBuilder)
-- uid: Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStandardExtensions*
+  href: api/Microsoft.AspNetCore.Hosting.HostingWebHostBuilderExtensions.html#Microsoft_AspNetCore_Hosting_HostingWebHostBuilderExtensions_UseStandardExtensions_Microsoft_AspNetCore_Hosting_IWebHostBuilder_
+  commentId: M:Microsoft.AspNetCore.Hosting.HostingWebHostBuilderExtensions.UseStandardExtensions(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+  fullName: Microsoft.AspNetCore.Hosting.HostingWebHostBuilderExtensions.UseStandardExtensions(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+  nameWithType: HostingWebHostBuilderExtensions.UseStandardExtensions(IWebHostBuilder)
+- uid: Microsoft.AspNetCore.Hosting.HostingWebHostBuilderExtensions.UseStandardExtensions*
   name: UseStandardExtensions
-  href: api/Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.html#Microsoft_AspNetCore_Hosting_WebHostBuilderExtensions_UseStandardExtensions_
-  commentId: Overload:Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStandardExtensions
+  href: api/Microsoft.AspNetCore.Hosting.HostingWebHostBuilderExtensions.html#Microsoft_AspNetCore_Hosting_HostingWebHostBuilderExtensions_UseStandardExtensions_
+  commentId: Overload:Microsoft.AspNetCore.Hosting.HostingWebHostBuilderExtensions.UseStandardExtensions
   isSpec: "True"
-  fullName: Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStandardExtensions
-  nameWithType: WebHostBuilderExtensions.UseStandardExtensions
+  fullName: Microsoft.AspNetCore.Hosting.HostingWebHostBuilderExtensions.UseStandardExtensions
+  nameWithType: HostingWebHostBuilderExtensions.UseStandardExtensions
 - uid: Microsoft.Extensions.Hosting
   name: Microsoft.Extensions.Hosting
   href: api/Microsoft.Extensions.Hosting.html
@@ -741,37 +741,6 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Hosting.ApplicationBuilderExtensions.UseStandardExtensions
   nameWithType: ApplicationBuilderExtensions.UseStandardExtensions
-- uid: Microsoft.Extensions.Hosting.HostBuilderExtensions
-  name: HostBuilderExtensions
-  href: api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html
-  commentId: T:Microsoft.Extensions.Hosting.HostBuilderExtensions
-  fullName: Microsoft.Extensions.Hosting.HostBuilderExtensions
-  nameWithType: HostBuilderExtensions
-- uid: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions*
-  name: AddStandardExtensions
-  href: api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions_
-  commentId: Overload:Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions
-  isSpec: "True"
-  fullName: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions
-  nameWithType: HostBuilderExtensions.AddStandardExtensions
-- uid: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions``1(Microsoft.Extensions.Hosting.IHostBuilder)
-  name: AddStandardExtensions<TProgram>(IHostBuilder)
-  href: api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__1_Microsoft_Extensions_Hosting_IHostBuilder_
-  commentId: M:Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions``1(Microsoft.Extensions.Hosting.IHostBuilder)
-  name.vb: AddStandardExtensions(Of TProgram)(IHostBuilder)
-  fullName: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions<TProgram>(Microsoft.Extensions.Hosting.IHostBuilder)
-  fullName.vb: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions(Of TProgram)(Microsoft.Extensions.Hosting.IHostBuilder)
-  nameWithType: HostBuilderExtensions.AddStandardExtensions<TProgram>(IHostBuilder)
-  nameWithType.vb: HostBuilderExtensions.AddStandardExtensions(Of TProgram)(IHostBuilder)
-- uid: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions``2(Microsoft.Extensions.Hosting.IHostBuilder)
-  name: AddStandardExtensions<TProgram, TOptions>(IHostBuilder)
-  href: api/Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__2_Microsoft_Extensions_Hosting_IHostBuilder_
-  commentId: M:Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions``2(Microsoft.Extensions.Hosting.IHostBuilder)
-  name.vb: AddStandardExtensions(Of TProgram, TOptions)(IHostBuilder)
-  fullName: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions<TProgram, TOptions>(Microsoft.Extensions.Hosting.IHostBuilder)
-  fullName.vb: Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions(Of TProgram, TOptions)(Microsoft.Extensions.Hosting.IHostBuilder)
-  nameWithType: HostBuilderExtensions.AddStandardExtensions<TProgram, TOptions>(IHostBuilder)
-  nameWithType.vb: HostBuilderExtensions.AddStandardExtensions(Of TProgram, TOptions)(IHostBuilder)
 - uid: Microsoft.Extensions.Hosting.HostExtensions
   name: HostExtensions
   href: api/Microsoft.Extensions.Hosting.HostExtensions.html
@@ -842,3 +811,34 @@ references:
   fullName.vb: Microsoft.Extensions.Hosting.HostExtensions.RunOnceAsync(Of TProgram)(Microsoft.Extensions.Hosting.IHost, System.Action(Of Microsoft.Extensions.Hosting.IHost), System.Threading.CancellationToken)
   nameWithType: HostExtensions.RunOnceAsync<TProgram>(IHost, Action<IHost>, CancellationToken)
   nameWithType.vb: HostExtensions.RunOnceAsync(Of TProgram)(IHost, Action(Of IHost), CancellationToken)
+- uid: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions
+  name: HostingHostBuilderExtensions
+  href: api/Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html
+  commentId: T:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions
+  fullName: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions
+  nameWithType: HostingHostBuilderExtensions
+- uid: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions*
+  name: AddStandardExtensions
+  href: api/Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_AddStandardExtensions_
+  commentId: Overload:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions
+  nameWithType: HostingHostBuilderExtensions.AddStandardExtensions
+- uid: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions``1(Microsoft.Extensions.Hosting.IHostBuilder)
+  name: AddStandardExtensions<TProgram>(IHostBuilder)
+  href: api/Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_AddStandardExtensions__1_Microsoft_Extensions_Hosting_IHostBuilder_
+  commentId: M:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions``1(Microsoft.Extensions.Hosting.IHostBuilder)
+  name.vb: AddStandardExtensions(Of TProgram)(IHostBuilder)
+  fullName: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions<TProgram>(Microsoft.Extensions.Hosting.IHostBuilder)
+  fullName.vb: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions(Of TProgram)(Microsoft.Extensions.Hosting.IHostBuilder)
+  nameWithType: HostingHostBuilderExtensions.AddStandardExtensions<TProgram>(IHostBuilder)
+  nameWithType.vb: HostingHostBuilderExtensions.AddStandardExtensions(Of TProgram)(IHostBuilder)
+- uid: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions``2(Microsoft.Extensions.Hosting.IHostBuilder)
+  name: AddStandardExtensions<TProgram, TOptions>(IHostBuilder)
+  href: api/Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_AddStandardExtensions__2_Microsoft_Extensions_Hosting_IHostBuilder_
+  commentId: M:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions``2(Microsoft.Extensions.Hosting.IHostBuilder)
+  name.vb: AddStandardExtensions(Of TProgram, TOptions)(IHostBuilder)
+  fullName: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions<TProgram, TOptions>(Microsoft.Extensions.Hosting.IHostBuilder)
+  fullName.vb: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions(Of TProgram, TOptions)(Microsoft.Extensions.Hosting.IHostBuilder)
+  nameWithType: HostingHostBuilderExtensions.AddStandardExtensions<TProgram, TOptions>(IHostBuilder)
+  nameWithType.vb: HostingHostBuilderExtensions.AddStandardExtensions(Of TProgram, TOptions)(IHostBuilder)

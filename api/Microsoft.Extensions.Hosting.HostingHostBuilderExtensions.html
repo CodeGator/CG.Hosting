@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class HostBuilderExtensions
+    <title>Class HostingHostBuilderExtensions
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class HostBuilderExtensions
+    <meta name="title" content="Class HostingHostBuilderExtensions
    ">
     <meta name="generator" content="docfx 2.57.1.0">
     
@@ -78,19 +78,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Microsoft.Extensions.Hosting.HostBuilderExtensions">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions">
   
   
-  <h1 id="Microsoft_Extensions_Hosting_HostBuilderExtensions" data-uid="Microsoft.Extensions.Hosting.HostBuilderExtensions" class="text-break">Class HostBuilderExtensions
+  <h1 id="Microsoft_Extensions_Hosting_HostingHostBuilderExtensions" data-uid="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions" class="text-break">Class HostingHostBuilderExtensions
   </h1>
   <div class="markdown level0 summary"><p>This class contains extension methods related to the <span class="xref">Microsoft.Extensions.Hosting.IHostBuilder</span>
-types.</p>
+types, for registering types related to host building.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">HostBuilderExtensions</span></div>
+    <div class="level1"><span class="xref">HostingHostBuilderExtensions</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -118,14 +118,14 @@ types.</p>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Extensions.Hosting.html">Microsoft.Extensions.Hosting</a></h6>
   <h6><strong>Assembly</strong>: CG.Hosting.dll</h6>
-  <h5 id="Microsoft_Extensions_Hosting_HostBuilderExtensions_syntax">Syntax</h5>
+  <h5 id="Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class HostBuilderExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class HostingHostBuilderExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  <a id="Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions_" data-uid="Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions*"></a>
-  <h4 id="Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__1_Microsoft_Extensions_Hosting_IHostBuilder_" data-uid="Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions``1(Microsoft.Extensions.Hosting.IHostBuilder)">AddStandardExtensions&lt;TProgram&gt;(IHostBuilder)</h4>
+  <a id="Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_AddStandardExtensions_" data-uid="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions*"></a>
+  <h4 id="Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_AddStandardExtensions__1_Microsoft_Extensions_Hosting_IHostBuilder_" data-uid="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions``1(Microsoft.Extensions.Hosting.IHostBuilder)">AddStandardExtensions&lt;TProgram&gt;(IHostBuilder)</h4>
   <div class="markdown level1 summary"><p>This method adds standard hosting configuration and services to the
 specified host builder, including user secrets and serilog based logging.</p>
 </div>
@@ -186,8 +186,8 @@ for chaining calls together.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__1_Microsoft_Extensions_Hosting_IHostBuilder__examples">Examples</h5>
-  <p>This example demonstrates a typical use of the <a class="xref" href="Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__1_Microsoft_Extensions_Hosting_IHostBuilder_">AddStandardExtensions&lt;TProgram&gt;(IHostBuilder)</a>
+  <h5 id="Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_AddStandardExtensions__1_Microsoft_Extensions_Hosting_IHostBuilder__examples">Examples</h5>
+  <p>This example demonstrates a typical use of the <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_AddStandardExtensions__1_Microsoft_Extensions_Hosting_IHostBuilder_">AddStandardExtensions&lt;TProgram&gt;(IHostBuilder)</a>
 method:</p>
 <pre><code>public void ConfigureServices(IServiceCollection services)
 {
@@ -218,8 +218,8 @@ any of the arguments are missing, or NULL.</p>
       </tr>
     </tbody>
   </table>
-  <a id="Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions_" data-uid="Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions*"></a>
-  <h4 id="Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__2_Microsoft_Extensions_Hosting_IHostBuilder_" data-uid="Microsoft.Extensions.Hosting.HostBuilderExtensions.AddStandardExtensions``2(Microsoft.Extensions.Hosting.IHostBuilder)">AddStandardExtensions&lt;TProgram, TOptions&gt;(IHostBuilder)</h4>
+  <a id="Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_AddStandardExtensions_" data-uid="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions*"></a>
+  <h4 id="Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_AddStandardExtensions__2_Microsoft_Extensions_Hosting_IHostBuilder_" data-uid="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions``2(Microsoft.Extensions.Hosting.IHostBuilder)">AddStandardExtensions&lt;TProgram, TOptions&gt;(IHostBuilder)</h4>
   <div class="markdown level1 summary"><p>This method adds standard hosting configuration and services to the
 specified host builder, including user secrets, program options, and
 serilog based logging.</p>
@@ -286,8 +286,8 @@ for chaining calls together.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__2_Microsoft_Extensions_Hosting_IHostBuilder__examples">Examples</h5>
-  <p>This example demonstrates a typical use of the <a class="xref" href="Microsoft.Extensions.Hosting.HostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostBuilderExtensions_AddStandardExtensions__2_Microsoft_Extensions_Hosting_IHostBuilder_">AddStandardExtensions&lt;TProgram, TOptions&gt;(IHostBuilder)</a>
+  <h5 id="Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_AddStandardExtensions__2_Microsoft_Extensions_Hosting_IHostBuilder__examples">Examples</h5>
+  <p>This example demonstrates a typical use of the <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_AddStandardExtensions__2_Microsoft_Extensions_Hosting_IHostBuilder_">AddStandardExtensions&lt;TProgram, TOptions&gt;(IHostBuilder)</a>
 method:</p>
 <pre><code>public void ConfigureServices(IServiceCollection services)
 {
