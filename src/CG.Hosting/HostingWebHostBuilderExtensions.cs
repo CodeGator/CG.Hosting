@@ -5,9 +5,9 @@ namespace Microsoft.AspNetCore.Hosting
 {
     /// <summary>
     /// This class contains extension methods related to the <see cref="IWebHostBuilder"/>
-    /// types.
+    /// types, for registering types related to web host building.
     /// </summary>
-    public static partial class WebHostBuilderExtensions
+    public static partial class HostingWebHostBuilderExtensions
     {
         // *******************************************************************
         // Public methods.

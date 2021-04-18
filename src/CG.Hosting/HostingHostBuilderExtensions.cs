@@ -7,9 +7,9 @@ namespace Microsoft.Extensions.Hosting
 {
     /// <summary>
     /// This class contains extension methods related to the <see cref="IHostBuilder"/>
-    /// types.
+    /// types, for registering types related to host building.
     /// </summary>
-    public static partial class HostBuilderExtensions
+    public static partial class HostingHostBuilderExtensions
     {
         // *******************************************************************
         // Public methods.
