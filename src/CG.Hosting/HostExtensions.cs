@@ -79,10 +79,11 @@ namespace Microsoft.Extensions.Hosting
         /// </summary>
         /// <param name="host">The host to use for the operation.</param>
         /// <param name="action">The delegate to use for the operation.</param>
+        /// <param name="cancellationToken">A cancellation token.</param>
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// any of the arguments are missing, or NULL.</exception>
         /// <example>
-        /// This example demostrates a typical use of the <see cref="RunDelegate(IHost, Action{IHost})"/>
+        /// This example demostrates a typical use of the <see cref="RunDelegate(IHost, Action{IHost, CancellationToken}, CancellationToken)"/>
         /// method:
         /// <code>
         /// public void ConfigureServices(IServiceCollection services)
@@ -98,7 +99,8 @@ namespace Microsoft.Extensions.Hosting
         /// </example>
         public static void RunDelegate(
             this IHost host,
-            Action<IHost> action
+            Action<IHost, CancellationToken> action,
+            CancellationToken cancellationToken = default
             )
         {
             // Validate the parameters before attempting to use them.
@@ -108,12 +110,17 @@ namespace Microsoft.Extensions.Hosting
             try
             {
                 // Run the action.
-                action(host);
+                action(
+                    host,
+                    cancellationToken
+                    );
             }
             finally
             {
                 // Stop the host.
-                host.StopAsync().Wait();
+                host.StopAsync(
+                    cancellationToken
+                    ).Wait();
             }
         }
 
@@ -159,13 +166,7 @@ namespace Microsoft.Extensions.Hosting
 
             // Get a friendly name for the application.
             var appName = AppDomain.CurrentDomain.FriendlyNameEx(true);
-
-            // Get the file version for the program's assembly.
-            var appVersion = typeof(TProgram).Assembly.ReadFileVersion();
-
-            // Make a pretty console title.
-            Console.Title = $"{appName} - {appVersion}";
-
+            
             // Create a safe mutex name.
             var mutexName = $"Global\\{{{appName.Replace('\\', '_').Replace(':', '_')}}}";
 
@@ -269,12 +270,6 @@ namespace Microsoft.Extensions.Hosting
 
             // Get a friendly name for the application.
             var appName = AppDomain.CurrentDomain.FriendlyNameEx(true);
-
-            // Get the file version for the program's assembly.
-            var appVersion = typeof(TProgram).Assembly.ReadFileVersion();
-
-            // Make a pretty console title.
-            Console.Title = $"{appName} - {appVersion}";
 
             // Create a safe mutex name.
             var mutexName = $"Global\\{{{appName.Replace('\\', '_').Replace(':', '_')}}}";
