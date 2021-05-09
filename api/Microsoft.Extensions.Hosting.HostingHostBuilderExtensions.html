@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class HostingHostBuilderExtensions
    ">
-    <meta name="generator" content="docfx 2.57.1.0">
+    <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -301,6 +301,147 @@ method:</p>
         .Run();
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown whenever
+any of the arguments are missing, or NULL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_RunDelegate_" data-uid="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegate*"></a>
+  <h4 id="Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken_" data-uid="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken},System.Threading.CancellationToken)">RunDelegate(IHostBuilder, Action&lt;IHost, CancellationToken&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This method runs a delegate within the context of the specified <span class="xref">Microsoft.Extensions.Hosting.IHostBuilder</span>
+object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RunDelegate(this IHostBuilder hostBuilder, Action&lt;IHost, CancellationToken&gt; hostDelegate, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Hosting.IHostBuilder</span></td>
+        <td><span class="parametername">hostBuilder</span></td>
+        <td><p>The host builder to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">Microsoft.Extensions.Hosting.IHost</span>, <span class="xref">System.Threading.CancellationToken</span>&gt;</td>
+        <td><span class="parametername">hostDelegate</span></td>
+        <td><p>The delegate to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken__examples">Examples</h5>
+  <p>This example demostrates a typical use of the <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken_">RunDelegate(IHostBuilder, Action&lt;IHost, CancellationToken&gt;, CancellationToken)</a>
+method:</p>
+<pre><code>public void ConfigureServices(IServiceCollection services)
+{
+    Host.CreateDefaultBuilder()
+        .RunDelegate((host, token) => 
+        {
+            Console.WriteLine(&quot;Hello World&quot;);
+        });
+}</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown whenever
+any of the arguments are missing, or NULL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_RunDelegateAsync_" data-uid="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegateAsync*"></a>
+  <h4 id="Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_RunDelegateAsync_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken_" data-uid="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegateAsync(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken},System.Threading.CancellationToken)">RunDelegateAsync(IHostBuilder, Action&lt;IHost, CancellationToken&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This method runs a delegate within the context of the specified <span class="xref">Microsoft.Extensions.Hosting.IHostBuilder</span>
+object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task RunDelegateAsync(this IHostBuilder hostBuilder, Action&lt;IHost, CancellationToken&gt; action, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Hosting.IHostBuilder</span></td>
+        <td><span class="parametername">hostBuilder</span></td>
+        <td><p>The host builder to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">Microsoft.Extensions.Hosting.IHost</span>, <span class="xref">System.Threading.CancellationToken</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The delegate to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>

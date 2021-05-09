@@ -747,15 +747,15 @@ references:
   commentId: T:Microsoft.Extensions.Hosting.HostExtensions
   fullName: Microsoft.Extensions.Hosting.HostExtensions
   nameWithType: HostExtensions
-- uid: Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost})
-  name: RunDelegate(IHost, Action<IHost>)
-  href: api/Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost__
-  commentId: M:Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost})
-  name.vb: RunDelegate(IHost, Action(Of IHost))
-  fullName: Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost, System.Action<Microsoft.Extensions.Hosting.IHost>)
-  fullName.vb: Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost, System.Action(Of Microsoft.Extensions.Hosting.IHost))
-  nameWithType: HostExtensions.RunDelegate(IHost, Action<IHost>)
-  nameWithType.vb: HostExtensions.RunDelegate(IHost, Action(Of IHost))
+- uid: Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  name: RunDelegate(IHost, Action<IHost, CancellationToken>, CancellationToken)
+  href: api/Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken_
+  commentId: M:Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  name.vb: RunDelegate(IHost, Action(Of IHost, CancellationToken), CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost, System.Action<Microsoft.Extensions.Hosting.IHost, System.Threading.CancellationToken>, System.Threading.CancellationToken)
+  fullName.vb: Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost, System.Action(Of Microsoft.Extensions.Hosting.IHost, System.Threading.CancellationToken), System.Threading.CancellationToken)
+  nameWithType: HostExtensions.RunDelegate(IHost, Action<IHost, CancellationToken>, CancellationToken)
+  nameWithType.vb: HostExtensions.RunDelegate(IHost, Action(Of IHost, CancellationToken), CancellationToken)
 - uid: Microsoft.Extensions.Hosting.HostExtensions.RunDelegate*
   name: RunDelegate
   href: api/Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_
@@ -842,3 +842,35 @@ references:
   fullName.vb: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.AddStandardExtensions(Of TProgram, TOptions)(Microsoft.Extensions.Hosting.IHostBuilder)
   nameWithType: HostingHostBuilderExtensions.AddStandardExtensions<TProgram, TOptions>(IHostBuilder)
   nameWithType.vb: HostingHostBuilderExtensions.AddStandardExtensions(Of TProgram, TOptions)(IHostBuilder)
+- uid: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  name: RunDelegate(IHostBuilder, Action<IHost, CancellationToken>, CancellationToken)
+  href: api/Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken_
+  commentId: M:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  name.vb: RunDelegate(IHostBuilder, Action(Of IHost, CancellationToken), CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHostBuilder, System.Action<Microsoft.Extensions.Hosting.IHost, System.Threading.CancellationToken>, System.Threading.CancellationToken)
+  fullName.vb: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHostBuilder, System.Action(Of Microsoft.Extensions.Hosting.IHost, System.Threading.CancellationToken), System.Threading.CancellationToken)
+  nameWithType: HostingHostBuilderExtensions.RunDelegate(IHostBuilder, Action<IHost, CancellationToken>, CancellationToken)
+  nameWithType.vb: HostingHostBuilderExtensions.RunDelegate(IHostBuilder, Action(Of IHost, CancellationToken), CancellationToken)
+- uid: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegate*
+  name: RunDelegate
+  href: api/Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_RunDelegate_
+  commentId: Overload:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegate
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegate
+  nameWithType: HostingHostBuilderExtensions.RunDelegate
+- uid: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegateAsync(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  name: RunDelegateAsync(IHostBuilder, Action<IHost, CancellationToken>, CancellationToken)
+  href: api/Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_RunDelegateAsync_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken_
+  commentId: M:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegateAsync(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken},System.Threading.CancellationToken)
+  name.vb: RunDelegateAsync(IHostBuilder, Action(Of IHost, CancellationToken), CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegateAsync(Microsoft.Extensions.Hosting.IHostBuilder, System.Action<Microsoft.Extensions.Hosting.IHost, System.Threading.CancellationToken>, System.Threading.CancellationToken)
+  fullName.vb: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegateAsync(Microsoft.Extensions.Hosting.IHostBuilder, System.Action(Of Microsoft.Extensions.Hosting.IHost, System.Threading.CancellationToken), System.Threading.CancellationToken)
+  nameWithType: HostingHostBuilderExtensions.RunDelegateAsync(IHostBuilder, Action<IHost, CancellationToken>, CancellationToken)
+  nameWithType.vb: HostingHostBuilderExtensions.RunDelegateAsync(IHostBuilder, Action(Of IHost, CancellationToken), CancellationToken)
+- uid: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegateAsync*
+  name: RunDelegateAsync
+  href: api/Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_RunDelegateAsync_
+  commentId: Overload:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegateAsync
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunDelegateAsync
+  nameWithType: HostingHostBuilderExtensions.RunDelegateAsync

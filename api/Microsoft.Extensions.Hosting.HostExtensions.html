@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class HostExtensions
    ">
-    <meta name="generator" content="docfx 2.57.1.0">
+    <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -125,14 +125,14 @@ type.</p>
   <h3 id="methods">Methods
   </h3>
   <a id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunDelegate*"></a>
-  <h4 id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost__" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost})">RunDelegate(IHost, Action&lt;IHost&gt;)</h4>
+  <h4 id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken_" data-uid="Microsoft.Extensions.Hosting.HostExtensions.RunDelegate(Microsoft.Extensions.Hosting.IHost,System.Action{Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken},System.Threading.CancellationToken)">RunDelegate(IHost, Action&lt;IHost, CancellationToken&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>This method runs a delegate within the context of the specified <span class="xref">Microsoft.Extensions.Hosting.IHost</span>
 object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RunDelegate(this IHost host, Action&lt;IHost&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RunDelegate(this IHost host, Action&lt;IHost, CancellationToken&gt; action, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -151,15 +151,21 @@ object.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">Microsoft.Extensions.Hosting.IHost</span>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">Microsoft.Extensions.Hosting.IHost</span>, <span class="xref">System.Threading.CancellationToken</span>&gt;</td>
         <td><span class="parametername">action</span></td>
         <td><p>The delegate to use for the operation.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token.</p>
+</td>
+      </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost___examples">Examples</h5>
-  <p>This example demostrates a typical use of the <a class="xref" href="Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost__">RunDelegate(IHost, Action&lt;IHost&gt;)</a>
+  <h5 id="Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken__examples">Examples</h5>
+  <p>This example demostrates a typical use of the <a class="xref" href="Microsoft.Extensions.Hosting.HostExtensions.html#Microsoft_Extensions_Hosting_HostExtensions_RunDelegate_Microsoft_Extensions_Hosting_IHost_System_Action_Microsoft_Extensions_Hosting_IHost_System_Threading_CancellationToken__System_Threading_CancellationToken_">RunDelegate(IHost, Action&lt;IHost, CancellationToken&gt;, CancellationToken)</a>
 method:</p>
 <pre><code>public void ConfigureServices(IServiceCollection services)
 {
