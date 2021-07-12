@@ -6,6 +6,7 @@
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Hosting.svg?style=flat)](https://nuget.org/packages/CG.Hosting)
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Hosting/20)
 [![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Hosting/discussions)
+[![CG.Hosting on fuget.org](https://www.fuget.org/packages/CG.Hosting/badge.svg)](https://www.fuget.org/packages/CG.Hosting)
 
 #### What does it do?
 The package contains standard hosting extensions used by other CodeGator packages.
