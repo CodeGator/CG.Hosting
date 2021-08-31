@@ -3,6 +3,10 @@
 
 ## 2021.3
 
+* I removed the old Alert related code.
+
+## 2021.3
+
 * bug fixes
 
 ## 2021.2
