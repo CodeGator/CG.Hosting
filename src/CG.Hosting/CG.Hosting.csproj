@@ -1,17 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net5.0</TargetFrameworks>
+    <TargetFrameworks>net6.0</TargetFrameworks>
     <RootNamespace>CG.Hosting</RootNamespace>
     <Description>This package contains hosting extensions used by other CodeGator packages. 
 
 Platforms supported:
-      .NET 5.x or above</Description>
+      .NET 6.x or above</Description>
     <Company>CodeGator</Company>
     <Authors>Martin Cook</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Copyright>Copyright © 2018 - 2021 by CodeGator.</Copyright>
+    <Copyright>Copyright © 2018 - 2022 by CodeGator.</Copyright>
     <PackageProjectUrl>https://github.com/CodeGator/CG.Hosting</PackageProjectUrl>
     <PackageTags>hosting, CG.Hosting, CodeGator</PackageTags>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -22,13 +22,13 @@ Platforms supported:
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\net5.0\CG.Hosting.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\net6.0\CG.Hosting.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CG.Core" Version="2021.3.3" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.231">
+    <PackageReference Include="CG.Core" Version="2022.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.244">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

@@ -20,7 +20,7 @@ The package contains standard hosting extensions used by other CodeGator package
 * Microsoft.Extensions.Hosting.HostExtensions
 
 #### What platform(s) does it support?
-* .NET 5.x or higher
+* .NET 6.x or higher
 
 #### How do I install it?
 The binary is hosted on [NuGet](https://www.nuget.org/packages/CG.Hosting). To install the package using the NuGet package manager:
