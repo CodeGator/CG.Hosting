@@ -1,9 +1,4 @@
-﻿using CG;
-using CG.Validations;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
-
+﻿
 namespace Microsoft.Extensions.Hosting
 {
     /// <summary>
@@ -165,7 +160,7 @@ namespace Microsoft.Extensions.Hosting
 
             // Get a friendly name for the application.
             var appName = AppDomain.CurrentDomain.FriendlyNameEx(true);
-            
+
             // Create a safe mutex name.
             var mutexName = $"Global\\{{{appName.Replace('\\', '_').Replace(':', '_')}}}";
 

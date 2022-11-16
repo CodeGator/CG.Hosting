@@ -1,10 +1,4 @@
-﻿using CG.Validations;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
-
+﻿
 namespace Microsoft.Extensions.Hosting
 {
     /// <summary>
@@ -29,7 +23,7 @@ namespace Microsoft.Extensions.Hosting
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// any of the arguments are missing, or NULL.</exception>
         /// <example>
-        /// This example demostrates a typical use of the <see cref="RunDelegate(IHostBuilder, Action{IHost, CancellationToken}, CancellationToken)"/>
+        /// This example demonstrates a typical use of the <see cref="RunDelegate(IHostBuilder, Action{IHost, CancellationToken}, CancellationToken)"/>
         /// method:
         /// <code>
         /// public void ConfigureServices(IServiceCollection services)
