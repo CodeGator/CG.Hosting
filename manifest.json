@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Hosting.HostExtensions.html",
-          "hash": "TF2LwnXAdKE7td0q0SbOyHEil9lmo+pYrpgJMoBSp4c="
+          "hash": "/+iCLpLf1RDkIYWlP0o93a/G1WLfE8FwA+oAgB3KYn8="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html",
-          "hash": "MFqOY5NAXsNgB+mSM85PRwnca+Zn4gkQRLSpHaykd1o="
+          "hash": "ITHQs4S2x+hIc7fBsf4cwNihXzT7OA2hV529zD2TaPw="
         }
       },
       "is_incremental": false,
